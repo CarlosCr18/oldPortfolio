@@ -31,7 +31,7 @@ const ContentContact = () => {
               axios.defaults.headers.post["Content-Type"] = "application/json";
               axios
                 .post(
-                  "https://formsubmit.co/ajax/jcarloscrespo18@hotmail.com",
+                  "https://formsubmit.co/ajax/carlosLCrespo18@hotmail.com",
                   {
                     name: form.elements["name"].value,
                     email: form.elements["email"].value,
