@@ -2,6 +2,7 @@ let language = "es";
 
 const navBarData = [
   {
+    aria: "navigation link",
     home: "Home",
     about: "About",
     projects: "Projects",
@@ -9,6 +10,7 @@ const navBarData = [
     resumeUrl: "/resumeEnglish.pdf",
   },
   {
+    aria: "link de navegacion",
     home: "Inicio",
     about: "Acerca",
     projects: "Proyectos",
@@ -33,11 +35,11 @@ const homeData = [
 const aboutData = [
   {
     title: "Acerca de mi",
-    text: "Hola mi nombre es Carlos Crespo \n Soy un ingeniero en mecatronica con un gran interes en la tecnologia que quiere expandir sus horizontes y ahora desempenarme como desarrollador web iniciando como front end \n Soy un desarrollador front end autodidacta, comenze mi viaje en FreeCodeCamp en agosto del 2021 completando su certificado de Front End Development Libraries en noviembe del 2021, despues he seguido estudiando por mi cuenta con youtube e internet.",
+    text: "Hola mi nombre es Carlos Crespo \n Soy un ingeniero en mecatronica con un gran interes en la tecnologia que busca siempre expandir sus horizontes \n Soy un desarrollador autodidacta, comenze mi viaje en FreeCodeCamp en agosto del 2021 completando su certificado de Front End Development Libraries en noviembe del 2021 y aun estoy estudiando por mi cuenta a traves de articulos en la red, youtube e internet.",
   },
   {
     title: "About me",
-    text: "Hello I'm Carlos Crespo,\n  I'm a mechatronics engineer with great interest in technology who wants to expand his horizons and pursue a career as a web developer starting as a front end developer.\n I'm an autodidact front end developer, I started my journey as a front end developer in August 2021 at FreeCodeCamp completing their course and recieving a Front End Development Libraries certificate in November 2021, from then on I've been learning through web articles, stackoverflow and youtube.",
+    text: "Hello I'm Carlos Crespo,\n  I'm a mechatronics engineer with great interest in technology who is always looking for something new and exciting.\n I'm an autodidact developer, I started my journey in August 2021 at FreeCodeCamp completing their course and recieving a Front End Development Libraries certificate in November 2021, from then on I've been learning through web articles, stackoverflow and youtube.",
   },
 ];
 
@@ -54,10 +56,10 @@ const projectsData = [
         id: "Maskottchen",
         title: "Dog grooming center",
         img: "img/maskottchen.webp",
-        imgAlt: "project 1 image",
+        imgAlt: "project maskottchen preview image",
         liveUrl: "https://carloscr18.github.io/Maskottchen/",
         github: "https://github.com/CarlosCr18/Maskottchen",
-        text: "frontpage for a dog grooming center and store",
+        text: "Frontpage for a dog grooming center and store",
         skills: [
           {
             url: "img/html.webp",
@@ -81,10 +83,10 @@ const projectsData = [
         id: "Pomodoro",
         title: "Pomodoro App",
         img: "img/pomodoro.webp",
-        imgAlt: "project 2 image",
-        liveUrl: "pomodoro",
-        github: "",
-        text: "Pomodoro clock developed with react",
+        imgAlt: "project pomodoro preview image",
+        liveUrl: "https://carloscr18.github.io/pomodoro/",
+        github: "https://github.com/CarlosCr18/pomodoro",
+        text: "A clock to keep track of your sessions length",
         skills: [
           {
             url: "img/javascript.svg",
@@ -104,10 +106,10 @@ const projectsData = [
         id: "RandomQuotes",
         title: "Random quotes generator",
         img: "img/randomquotes.webp",
-        imgAlt: "project 3 image",
-        liveUrl: "random",
-        github: "",
-        text: "developed with react-redux",
+        imgAlt: "project random quotes preview image",
+        liveUrl: "https://carloscr18.github.io/randomQuotes/",
+        github: "https://github.com/CarlosCr18/randomQuotes",
+        text: "Get some inspiration from a random quote",
         skills: [
           {
             url: "img/javascript.svg",
@@ -131,10 +133,10 @@ const projectsData = [
         id: "Calculator",
         title: "Calculator app",
         img: "img/calculator.webp",
-        imgAlt: "project 4 image",
+        imgAlt: "project calculator preview image",
         liveUrl: "https://carloscr18.github.io/Calculator-app/",
         github: "https://github.com/CarlosCr18/Calculator-app",
-        text: "Developed with react",
+        text: "A simple calculator",
         skills: [
           {
             url: "img/javascript.svg",
@@ -156,10 +158,10 @@ const projectsData = [
         id: "Maskottchen",
         title: "Maskottchen",
         img: "img/maskottchen.webp",
-        imgAlt: "imagen de proyecto 1 ",
+        imgAlt: "imagen de proyecto maskottchen ",
         liveUrl: "https://carloscr18.github.io/Maskottchen/",
         github: "https://github.com/CarlosCr18/Maskottchen",
-        text: "frontpage para estetica y tienda canina",
+        text: "Frontpage para estetica y tienda canina",
         skills: [
           {
             url: "img/html.webp",
@@ -183,10 +185,10 @@ const projectsData = [
         id: "Pomodoro",
         title: "Pomodoro App",
         img: "img/pomodoro.webp",
-        imgAlt: "imagen proyecto 2",
-        liveUrl: "",
-        github: "",
-        text: "Reloj pomodoro desarrolado con react",
+        imgAlt: "imagen proyecto Pomodoro",
+        liveUrl: "https://carloscr18.github.io/pomodoro/",
+        github: "https://github.com/CarlosCr18/pomodoro",
+        text: "Temporizador para manejar tus sesiones",
         skills: [
           {
             url: "img/javascript.svg",
@@ -206,10 +208,10 @@ const projectsData = [
         id: "RandomQuotes",
         title: "Generador de citas al azar",
         img: "img/randomquotes.webp",
-        imgAlt: "imagen de proyecto 3",
-        liveUrl: "",
-        github: "",
-        text: "desarrolado con react-redux",
+        imgAlt: "imagen de proyecto generador de citas",
+        liveUrl: "https://carloscr18.github.io/randomQuotes/",
+        github: "https://github.com/CarlosCr18/randomQuotes",
+        text: "Inspirate con una cita famosa al azar",
         skills: [
           {
             url: "img/javascript.svg",
@@ -233,10 +235,10 @@ const projectsData = [
         id: "Calculator",
         title: "Calculadora app",
         img: "img/calculator.webp",
-        imgAlt: "imagen de proyecto 4",
+        imgAlt: "imagen de proyecto calculadora",
         liveUrl: "https://carloscr18.github.io/Calculator-app/",
         github: "https://github.com/CarlosCr18/Calculator-app",
-        text: "Desarrolada con react",
+        text: "Una calculadora simple",
         skills: [
           {
             url: "img/javascript.svg",

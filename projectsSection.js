@@ -125,10 +125,18 @@ const ProjectsCard = (project) => {
       />
       <div className="project-card-container">{currentProjectSkills}</div>
       <div className="project-card-container">
-        <a href={currentProject.liveUrl} target="_blank">
+        <a
+          href={currentProject.liveUrl}
+          aria-label="link to live page"
+          target="_blank"
+        >
           Live
         </a>
-        <a href={currentProject.github} target="_blank">
+        <a
+          href={currentProject.github}
+          aria-label="link to github page"
+          target="_blank"
+        >
           <i className="fa fa-github" />
         </a>
       </div>

@@ -1,4 +1,5 @@
 const ContentAbout = () => {
+  let currentAboutData = language === "es" ? aboutData[0] : aboutData[1];
   return (
     <div className="content-about" id="content-about">
       <div className="content-about-text">
@@ -6,18 +7,12 @@ const ContentAbout = () => {
           {language === "es" ? aboutData[0].title : aboutData[1].title}
         </h2>
         <div className="About-text">
-          {language === "es"
-            ? aboutData[0].text.split("\n")[0]
-            : aboutData[1].text.split("\n")[0]}
+          {currentAboutData.text.split("\n")[0]}
           <br></br>
-          {language === "es"
-            ? aboutData[0].text.split("\n")[1]
-            : aboutData[1].text.split("\n")[1]}
+          {currentAboutData.text.split("\n")[1]}
           <br></br>
           <br></br>
-          {language === "es"
-            ? aboutData[0].text.split("\n")[2]
-            : aboutData[1].text.split("\n")[2]}
+          {currentAboutData.text.split("\n")[2]}
         </div>
       </div>
       <div className="About-skills">

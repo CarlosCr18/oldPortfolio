@@ -1,4 +1,5 @@
 const NavBarLinks = () => {
+  let currentNavBarData = language === "en" ? navBarData[0] : navBarData[1];
   React.useEffect(() => {
     let slider = document.querySelector(".navBar-slider");
     let element = document.querySelector(".navBar-link");
@@ -10,25 +11,39 @@ const NavBarLinks = () => {
     <div>
       <ul className="navBar-list">
         <li>
-          <a href="#main" className="navBar-link">
-            {language === "en" ? navBarData[0].home : navBarData[1].home}
+          <a
+            href="#main"
+            aria-label={currentNavBarData.aria}
+            className="navBar-link"
+          >
+            {currentNavBarData.home}
           </a>
         </li>
         <li>
-          <a href="#content-about" className="navBar-link">
-            {language === "en" ? navBarData[0].about : navBarData[1].about}
+          <a
+            href="#content-about"
+            aria-label={currentNavBarData.aria}
+            className="navBar-link"
+          >
+            {currentNavBarData.about}
           </a>
         </li>
         <li>
-          <a href="#content-projects" className="navBar-link">
-            {language === "en"
-              ? navBarData[0].projects
-              : navBarData[1].projects}
+          <a
+            href="#content-projects"
+            aria-label={currentNavBarData.aria}
+            className="navBar-link"
+          >
+            {currentNavBarData.projects}
           </a>
         </li>
         <li>
-          <a href="#content-form" className="navBar-link">
-            {language === "en" ? navBarData[0].contact : navBarData[1].contact}
+          <a
+            href="#content-form"
+            aria-label={currentNavBarData.aria}
+            className="navBar-link"
+          >
+            {currentNavBarData.contact}
           </a>
         </li>
         <li className="navBar-slider"></li>
@@ -38,6 +53,7 @@ const NavBarLinks = () => {
 };
 
 const NavBarIcons = () => {
+  let currentNavBarData = language === "en" ? navBarData[0] : navBarData[1];
   return (
     <nav className="navBar-icons">
       <div className="navBar-list-icons">
@@ -62,11 +78,7 @@ const NavBarIcons = () => {
           <i className="fa fa-linkedin" aria-hidden="true"></i>
         </a>
         <a
-          href={
-            language === "en"
-              ? navBarData[0].resumeUrl
-              : navBarData[1].resumeUrl
-          }
+          href={currentNavBarData.resumeUrl}
           target="_blank"
           tabIndex="0"
           aria-label="link to download"
