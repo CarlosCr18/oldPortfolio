@@ -1,3 +1,10 @@
+// onScroll section
+// Gsap is used to animate elements while scrolling, call the navbarSlider function so the navbar background is always behind
+// the current user positon on the page and to change the position of the navbar on big screens
+// Gsap es usado para animar los elementos mientras se avanza por la pagina, llama a la funcion navBarSlider para que el fondo
+// de la barra de navegacion este actualizado en la posicion del usuario en la pagina y tambien para cambiar la posicion de la
+// barra de navegacion en pantallas grandes
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".navBar", {
@@ -6,7 +13,7 @@ gsap.to(".navBar", {
   duration: 0.5,
   scrollTrigger: {
     trigger: "#main",
-    start: "top+=40px top", // start when top of trigger target hits 50% point of viewport
+    start: "top+=40px top",
     end: "bottom",
     toggleActions: "play none none reverse ",
     markers: false,
@@ -35,7 +42,7 @@ gsap.to(".navBar", {
 gsap.to("#content-about", {
   scrollTrigger: {
     trigger: "#content-about",
-    start: "top-=10% center", // start when top of trigger target hits 50% point of viewport
+    start: "top-=10% center",
     end: "bottom",
     markers: false,
     onEnter: () => {
@@ -51,7 +58,7 @@ gsap.to("#content-about", {
 gsap.to("#content-projects", {
   scrollTrigger: {
     trigger: "#content-projects",
-    start: "top-=10% center", // start when top of trigger target hits 50% point of viewport
+    start: "top-=10% center",
     end: "bottom",
     markers: false,
     onEnter: () => {
@@ -68,7 +75,7 @@ gsap.to("#content-projects", {
 gsap.to("#content-form", {
   scrollTrigger: {
     trigger: "#content-form",
-    start: "top-=10% center", // start when top of trigger target hits 50% point of viewport
+    start: "top-=10% center",
     end: "bottom",
     markers: false,
     onEnter: () => {
@@ -88,7 +95,7 @@ gsap.to(".content-about-text", {
   duration: 1,
   scrollTrigger: {
     trigger: "#content-about",
-    start: "top-=20% center", // start when top of trigger target hits 50% point of viewport
+    start: "top-=20% center",
     end: "bottom",
     markers: false,
     toggleActions: "play none none reverse ",
@@ -99,7 +106,7 @@ gsap.to(".About-skills", {
   duration: 1.5,
   scrollTrigger: {
     trigger: "#content-about",
-    start: "top-=20% center", // start when top of trigger target hits 50% point of viewport
+    start: "top-=20% center",
     end: "bottom",
     markers: false,
     toggleActions: "play none none reverse ",
@@ -110,7 +117,7 @@ gsap.to(".projects-text", {
   duration: 1,
   scrollTrigger: {
     trigger: "#content-projects",
-    start: "top-=20% center", // start when top of trigger target hits 50% point of viewport
+    start: "top-=20% center",
     end: "bottom",
     markers: false,
     toggleActions: "play none none reverse ",
@@ -122,28 +129,9 @@ gsap.to(".projects-container", {
   duration: 1,
   scrollTrigger: {
     trigger: "#content-projects",
-    start: "top center", // start when top of trigger target hits 50% point of viewport
+    start: "top center",
     end: "bottom",
     markers: false,
     toggleActions: "play none none reverse ",
   },
 });
-/*
-let windowS = document.getElementById("body");
-let formOffset = document.getElementById("content-form").offsetTop;
-let projectsOffset = document.getElementById("content-projects").offsetTop;
-let projectsEnd =
-  document.getElementById("content-projects").offsetTop +
-  document.getElementById("content-projects").clientHeight;
-console.log(windowS.scrollTop, formOffset);
-var scrollMaxY =
-  window.scrollMaxY ||
-  document.documentElement.scrollHeight - document.documentElement.clientHeight;
-window.addEventListener("scroll", function () {
-  console.log(window.scrollY, formOffset, projectsOffset, projectsEnd);
-  if (window.scrollY >= scrollMaxY) {
-    moveSlider(3);
-    console.log("max reached", scrollMaxY);
-  }
-});
-*/

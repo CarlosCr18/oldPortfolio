@@ -1,10 +1,13 @@
+//Holder Section to return semantically correct html
+//Seccion para regresar html semanticamente correcto
+
 const LoadContent = () => {
   return (
-    <React.Fragment>
+    <main id="main">
       <ContentHome />
       <ContentAbout />
       <ContentProjects />
       <ContentContact />
-    </React.Fragment>
+    </main>
   );
 };

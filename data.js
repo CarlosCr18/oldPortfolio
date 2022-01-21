@@ -1,3 +1,6 @@
+// data section of the webpage so we can change language within the same webpage using react
+// Seccion de informacion de la webpage para poder cambiar el lenguaje dentro de la misma pagina usando react
+
 let language = "es";
 
 const navBarData = [

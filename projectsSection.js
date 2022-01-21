@@ -1,3 +1,10 @@
+// Projects section
+// The data is set depending on the language
+// then we map the projects data so we can render all the projects
+
+// La informacion es asignada dependiendo del idioma
+// se mapea la informacion de los proyectos para renderizar todos los proyectos
+
 const ContentProjects = () => {
   let currentContent =
     language === "en" ? projectsData[0].english : projectsData[0].spanish;
@@ -5,6 +12,11 @@ const ContentProjects = () => {
   const projectsGallery = currentContent.map((e, index) => (
     <ProjectsCard project={e} key={index} />
   ));
+
+  // the useEffect hook is used so on the component creation only the first project
+  // has the class project-card-active
+  // Se usa el hook useEffect para que en la creacion del componente solo el primer
+  // proyecto tenga la class project-card-active
 
   React.useEffect(() => {
     document
@@ -15,6 +27,11 @@ const ContentProjects = () => {
       .classList.add("project-card-active");
   }, []);
 
+  //cardActivator function
+  // it gets an index and sets the index project with the class project-card-active and
+  // removes it from the rest of the projects
+  // obtiene un valor index y agrega al proyecto index con la clase project-card-active
+  // y le retira del resto de los proyectos
   const cardsActivator = (indexPassed) => {
     let content = document.querySelectorAll(".project-card");
     content.forEach((element, index) => {
@@ -63,6 +80,10 @@ const ContentProjects = () => {
     });
   };
 
+  //useEffect to call the cardsActivator function and register the listener for the projects
+  //only on create of the component
+  //useEffect para llamar a la funcion cardsActivator y registrar el listener de los projectos
+  //solo en la creacion del componente
   React.useEffect(() => {
     let content = document.querySelectorAll(".project-card");
     content.forEach((element, index) => {
@@ -88,8 +109,10 @@ const ContentProjects = () => {
     };
   }, []);
 
+  //projects content
+  //contenido de proyectos
   return (
-    <div className="content-projects" id="content-projects">
+    <section className="content-projects" id="content-projects">
       <div className="projects-text">
         <h2>
           {language === "en"
@@ -103,10 +126,12 @@ const ContentProjects = () => {
         </div>
       </div>
       <div className="projects-container">{projectsGallery}</div>
-    </div>
+    </section>
   );
 };
 
+//specific project content
+//Contenido especifico de un proyecto
 const ProjectsCard = (project) => {
   let currentProject = project.project;
   const currentProjectSkills = currentProject.skills.map((e, index) => (
@@ -150,6 +175,8 @@ const ProjectsCard = (project) => {
   );
 };
 
+//specific project skills images
+//imagenes de skills de un proyecto en especifico
 function ProjectSkills(skills) {
   let currentSkills = skills.skills;
 
@@ -162,9 +189,3 @@ function ProjectSkills(skills) {
     />
   );
 }
-/*
-ReactDOM.render(
-  <ContentProjects />,
-  document.getElementById("projectsDivContainer")
-);
-*/

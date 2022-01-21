@@ -1,3 +1,8 @@
+//navBar section
+//the data is set depending on the language, we use the useEffect hook so the navbarSlider element starts in the correct position with the right size
+//la informacion es asignada dependiendo del idioma, usamos el hook useEffect para que el elemento navbarSlider inicie con el tamano y posicion correctas
+
+//navBar section specific to the text anchor links
 const NavBarLinks = () => {
   let currentNavBarData = language === "en" ? navBarData[0] : navBarData[1];
   React.useEffect(() => {
@@ -52,6 +57,7 @@ const NavBarLinks = () => {
   );
 };
 
+//navBar section specific for the icons
 const NavBarIcons = () => {
   let currentNavBarData = language === "en" ? navBarData[0] : navBarData[1];
   return (
@@ -93,6 +99,9 @@ const NavBarIcons = () => {
   );
 };
 
+//Returns the full navbar with both text and icons sections selected
+//Regresa la barra de navegacion completa con ambas partes de texto e iconos
+
 const NavBar = () => {
   return (
     <header className="navBar" data-visible="false">
@@ -101,5 +110,3 @@ const NavBar = () => {
     </header>
   );
 };
-
-//ReactDOM.render(<NavBar />, document.getElementById("navBar"));

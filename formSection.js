@@ -1,7 +1,15 @@
+// Contact section
+// First get the data to display according to the language and split it to style it.
+// The submit is handled through the website formsubmit.co and axios wich depending on the result will trigger a response to the users to see
+
+// Seccion de Contacto
+// primero se obtiene la informacion dependiendo del lenguaje y se separa en piezas para darle estilo.
+// El envio del formato es manejado a traves del sitio formsubmit.co y axio con el cual a partir del resultado de la operacion dara un resultado que el usuario puede ver
+
 const ContentContact = () => {
   let formCurrentData = language === "en" ? formData[1] : formData[0];
   return (
-    <div className="content-form" id="content-form">
+    <section className="content-form" id="content-form">
       <div className="content-form-container">
         <div className="content-form-text">
           <h2>{formCurrentData.title}</h2>
@@ -86,8 +94,6 @@ const ContentContact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
-
-//ReactDOM.render(<FormContent />, document.getElementById("formDivContainer"));

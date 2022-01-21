@@ -1,7 +1,14 @@
 const ContentAbout = () => {
+  //About me section
+  //first set the data from source depending on the language
+  //we split the text into pieces and adding carriage returns to style the text
+  // Seccion acerca de
+  // Primero sleccionamos la informacion dependiendo de lenguaje
+  // Separamos el texto en piezas para poder darle estilo al texto
+
   let currentAboutData = language === "es" ? aboutData[0] : aboutData[1];
   return (
-    <div className="content-about" id="content-about">
+    <section className="content-about" id="content-about">
       <div className="content-about-text">
         <h2 className="About-Title">
           {language === "es" ? aboutData[0].title : aboutData[1].title}
@@ -31,8 +38,6 @@ const ContentAbout = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
-
-//ReactDOM.render(<ContentAbout />, document.getElementById("aboutDivContainer"));
