@@ -919,7 +919,7 @@ footer {
   }
   .project-card {
     text-align: center;
-    max-width: min(40rem,80%);
+    max-width: min(40rem,90%);
     
 
     gap: 0.5rem;
@@ -937,15 +937,9 @@ footer {
   .project-card-active {
     
   border-radius: 30% / 10%;
-  max-width:80%;
-  width: 199%;
+  max-width:90%;
+  width: 90%;
   margin-inline: 0;
-  }
-
-
-  .project-card-inactive:hover::after  {
-    width: 0;
-    height: 0;
   }
 
   .project-card:focus-visible,

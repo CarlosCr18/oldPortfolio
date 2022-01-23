@@ -20,20 +20,15 @@ const ContentProjects = () => {
     <ProjectsCard project={e} key={index} />
   ));
 
-  // the useEffect hook is used so on the component creation only the first project
-  // has the class project-card-active
-  // Se usa el hook useEffect para que en la creacion del componente solo el primer
-  // proyecto tenga la class project-card-active
+  // the useEffect hook is used to set the active class on project-card elements at creation
+  // Se usa el hook useEffect para que en la creacion del componente se asigne la clase active
+  //en los elementos project-card
 
   React.useEffect(() => {
     if (smallScreen) {
       document.querySelectorAll(".project-card").forEach((element, index) => {
-        document
-          .querySelectorAll(".project-card")
-          [index].classList.remove("project-card-inactive");
-        document
-          .querySelectorAll(".project-card")
-          [index].classList.add("project-card-active");
+        element.classList.remove("project-card-inactive");
+        element.classList.add("project-card-active");
       });
     } else {
       document
@@ -46,59 +41,30 @@ const ContentProjects = () => {
   }, []);
 
   //cardActivator function
+  // when the component is created it registers a listener for the active component image click
   // it gets an index and sets the index project with the class project-card-active and
   // removes it from the rest of the projects
+  // cuando el componente es creado se registra un listener para el click sobre su imagen
   // obtiene un valor index y agrega al proyecto index con la clase project-card-active
   // y le retira del resto de los proyectos
   const cardsActivator = (indexPassed) => {
     let content = document.querySelectorAll(".project-card");
-    if (!smallScreen) {
-      content.forEach((element, index) => {
-        if (
-          window
-            .getComputedStyle(document.documentElement)
-            .getPropertyValue("--small-screen") == 0
-        ) {
-          if (
-            document
-              .querySelectorAll(".project-card")
-              [index].classList.contains("project-card-active")
-          ) {
-            document.querySelectorAll(".project-card")[
-              index
-            ].children[3].onclick = () => {
-              document
-                .querySelectorAll(".project-card")
-                [index].children[5].children[0].click();
-            };
-          }
-        } else {
-          document.querySelectorAll(".project-card")[
-            index
-          ].children[3].onclick = () => {
-            document
-              .querySelectorAll(".project-card")
-              [index].children[5].children[0].click();
-          };
-        }
 
-        if (index === indexPassed) {
-          document
-            .querySelectorAll(".project-card")
-            [index].classList.remove("project-card-inactive");
-          document
-            .querySelectorAll(".project-card")
-            [index].classList.add("project-card-active");
-        } else {
-          document
-            .querySelectorAll(".project-card")
-            [index].classList.add("project-card-inactive");
-          document
-            .querySelectorAll(".project-card")
-            [index].classList.remove("project-card-active");
-        }
-      });
-    }
+    content.forEach((element, index) => {
+      if (index === indexPassed) {
+        element.classList.remove("project-card-inactive");
+        element.classList.add("project-card-active");
+      } else {
+        element.classList.add("project-card-inactive");
+        element.classList.remove("project-card-active");
+      }
+
+      if (element.classList.contains("project-card-active")) {
+        element.children[3].onclick = () => {
+          element.children[5].children[0].click();
+        };
+      }
+    });
   };
 
   //useEffect to call the cardsActivator function and register the listener for the projects
