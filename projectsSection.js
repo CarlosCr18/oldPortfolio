@@ -52,7 +52,7 @@ const ContentProjects = () => {
   // y le retira del resto de los proyectos
   const cardsActivator = (indexPassed) => {
     let content = document.querySelectorAll(".project-card");
-    if (!smallScreen) {
+    
       content.forEach((element, index) => {
         if (
           window
@@ -80,7 +80,7 @@ const ContentProjects = () => {
               .querySelectorAll(".project-card")
               [index].children[5].children[0].click();
           };
-        }
+        
 
         if (index === indexPassed) {
           document
