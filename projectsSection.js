@@ -6,6 +6,13 @@
 // se mapea la informacion de los proyectos para renderizar todos los proyectos
 
 const ContentProjects = () => {
+  let smallScreen =
+    window
+      .getComputedStyle(document.documentElement)
+      .getPropertyValue("--small-screen") == 1
+      ? true
+      : false;
+
   let currentContent =
     language === "en" ? projectsData[0].english : projectsData[0].spanish;
 
@@ -19,12 +26,23 @@ const ContentProjects = () => {
   // proyecto tenga la class project-card-active
 
   React.useEffect(() => {
-    document
-      .querySelectorAll(".project-card")[0]
-      .classList.remove("project-card-inactive");
-    document
-      .querySelectorAll(".project-card")[0]
-      .classList.add("project-card-active");
+    if (smallScreen) {
+      document.querySelectorAll(".project-card").forEach((element, index) => {
+        document
+          .querySelectorAll(".project-card")
+          [index].classList.remove("project-card-inactive");
+        document
+          .querySelectorAll(".project-card")
+          [index].classList.add("project-card-active");
+      });
+    } else {
+      document
+        .querySelectorAll(".project-card")[0]
+        .classList.remove("project-card-inactive");
+      document
+        .querySelectorAll(".project-card")[0]
+        .classList.add("project-card-active");
+    }
   }, []);
 
   //cardActivator function
@@ -34,17 +52,27 @@ const ContentProjects = () => {
   // y le retira del resto de los proyectos
   const cardsActivator = (indexPassed) => {
     let content = document.querySelectorAll(".project-card");
-    content.forEach((element, index) => {
-      if (
-        window
-          .getComputedStyle(document.documentElement)
-          .getPropertyValue("--small-screen") == 0
-      ) {
+    if (!smallScreen) {
+      content.forEach((element, index) => {
         if (
-          document
-            .querySelectorAll(".project-card")
-            [index].classList.contains("project-card-active")
+          window
+            .getComputedStyle(document.documentElement)
+            .getPropertyValue("--small-screen") == 0
         ) {
+          if (
+            document
+              .querySelectorAll(".project-card")
+              [index].classList.contains("project-card-active")
+          ) {
+            document.querySelectorAll(".project-card")[
+              index
+            ].children[3].onclick = () => {
+              document
+                .querySelectorAll(".project-card")
+                [index].children[5].children[0].click();
+            };
+          }
+        } else {
           document.querySelectorAll(".project-card")[
             index
           ].children[3].onclick = () => {
@@ -53,31 +81,24 @@ const ContentProjects = () => {
               [index].children[5].children[0].click();
           };
         }
-      } else {
-        document.querySelectorAll(".project-card")[index].children[3].onclick =
-          () => {
-            document
-              .querySelectorAll(".project-card")
-              [index].children[5].children[0].click();
-          };
-      }
 
-      if (index === indexPassed) {
-        document
-          .querySelectorAll(".project-card")
-          [index].classList.remove("project-card-inactive");
-        document
-          .querySelectorAll(".project-card")
-          [index].classList.add("project-card-active");
-      } else {
-        document
-          .querySelectorAll(".project-card")
-          [index].classList.add("project-card-inactive");
-        document
-          .querySelectorAll(".project-card")
-          [index].classList.remove("project-card-active");
-      }
-    });
+        if (index === indexPassed) {
+          document
+            .querySelectorAll(".project-card")
+            [index].classList.remove("project-card-inactive");
+          document
+            .querySelectorAll(".project-card")
+            [index].classList.add("project-card-active");
+        } else {
+          document
+            .querySelectorAll(".project-card")
+            [index].classList.add("project-card-inactive");
+          document
+            .querySelectorAll(".project-card")
+            [index].classList.remove("project-card-active");
+        }
+      });
+    }
   };
 
   //useEffect to call the cardsActivator function and register the listener for the projects

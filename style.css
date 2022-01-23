@@ -941,6 +941,13 @@ footer {
   width: 199%;
   margin-inline: 0;
   }
+
+
+  .project-card-inactive:hover::after  {
+    width: 0;
+    height: 0;
+  }
+
   .project-card:focus-visible,
   .project-card:hover {
     transform: translateY(0);
