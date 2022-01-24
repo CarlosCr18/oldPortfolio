@@ -55,8 +55,10 @@ const ContentProjects = () => {
         element.classList.remove("project-card-inactive");
         element.classList.add("project-card-active");
       } else {
-        element.classList.add("project-card-inactive");
-        element.classList.remove("project-card-active");
+        if (!smallScreen) {
+          element.classList.add("project-card-inactive");
+          element.classList.remove("project-card-active");
+        }
       }
 
       if (element.classList.contains("project-card-active")) {
