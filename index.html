@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,30 +17,38 @@
     <title>Carlos Crespo</title>
   </head>
   <body id="body">
+    <div class="loadingHolder"><p>Loading</p></div>
     <button class="burgerMenu">☰</button>
     <div class="container" id="ContentContainer"></div>
     <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin="anonymous"
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+      defer
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+      defer
     ></script>
     <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
+      integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="data.js" type="text/babel"></script>
-    <script src="navBar.js" type="text/babel"></script>
-    <script src="navBarSlider.js" type="text/babel"></script>
-    <script src="homeSection.js" type="text/babel"></script>
-    <script src="aboutSection.js" type="text/babel"></script>
-    <script src="projectsSection.js" type="text/babel"></script>
-    <script src="formSection.js" type="text/babel"></script>
-    <script src="content.js" type="text/babel"></script>
-    <script src="index.js" type="text/babel"></script>
-    <script src="burgerMenu.js" type="text/babel"></script>
-    <script src="onScroll.js" type="text/babel"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="data.js" type="text/babel" defer></script>
+    <script src="navBar.js" type="text/babel" defer></script>
+    <script src="navBarSlider.js" type="text/babel" defer></script>
+    <script src="homeSection.js" type="text/babel" defer></script>
+    <script src="aboutSection.js" type="text/babel" defer></script>
+    <script src="projectsSection.js" type="text/babel" defer></script>
+    <script src="formSection.js" type="text/babel" defer></script>
+    <script src="content.js" type="text/babel" defer></script>
+    <script src="index.js" type="text/babel" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="onScroll.js" type="text/babel" defer></script>
+    <script src="burgerMenu.js" type="text/babel" defer></script>
   </body>
 </html>

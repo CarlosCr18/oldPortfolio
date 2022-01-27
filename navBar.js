@@ -69,6 +69,7 @@ const NavBarIcons = () => {
           tabIndex="0"
           aria-label="link to github"
           className="icon github"
+          rel="noreferrer"
         >
           <div className="navBar-icon-title github-icon-title">Github</div>
           <i className="fa fa-github"></i>
@@ -79,6 +80,7 @@ const NavBarIcons = () => {
           tabIndex="0"
           aria-label="link to linkedin"
           className="icon linkedin"
+          rel="noreferrer"
         >
           <div className="navBar-icon-title linkedin-icon-title">Linkedin</div>
           <i className="fa fa-linkedin" aria-hidden="true"></i>
@@ -89,6 +91,7 @@ const NavBarIcons = () => {
           tabIndex="0"
           aria-label="link to download"
           className="icon resume"
+          rel="noreferrer"
           download
         >
           <div className="navBar-icon-title resume-icon-title">Resume</div>

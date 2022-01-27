@@ -136,6 +136,7 @@ const ProjectsCard = (project) => {
         className="project-card-img"
         alt={currentProject.imgAlt}
         src={currentProject.img}
+        loading="lazy"
       />
       <div className="project-card-container">{currentProjectSkills}</div>
       <div className="project-card-container">
@@ -143,6 +144,7 @@ const ProjectsCard = (project) => {
           href={currentProject.liveUrl}
           aria-label="link to live page"
           target="_blank"
+          rel="noreferrer"
         >
           Live
         </a>
@@ -150,6 +152,7 @@ const ProjectsCard = (project) => {
           href={currentProject.github}
           aria-label="link to github page"
           target="_blank"
+          rel="noreferrer"
         >
           <i className="fa fa-github" />
         </a>
@@ -175,6 +178,7 @@ function ProjectSkills(skills) {
       key={currentSkills.url}
       src={currentSkills.url}
       alt={currentSkills.alt}
+      loading="lazy"
     />
   );
 }

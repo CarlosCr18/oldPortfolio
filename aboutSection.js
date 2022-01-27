@@ -25,15 +25,15 @@ const ContentAbout = () => {
       <div className="About-skills">
         <h3>Skills</h3>
         <div className="About-skills-list">
-          <img src="img/html.webp" alt="html icon" />
-          <img src="img/javascript.svg" alt="javascript icon" />
-          <img src="img/CSS3.svg" alt="css icon" />
+          <img loading="lazy" src="img/html.webp" alt="html icon" />
+          <img loading="lazy" src="img/javascript.svg" alt="javascript icon" />
+          <img loading="lazy" src="img/CSS3.svg" alt="css icon" />
           <div>
-            <img src="img/react.webp" alt="React icon" />
+            <img loading="lazy" src="img/react.webp" alt="React icon" />
             <p>React</p>
           </div>
           <div>
-            <img src="img/github.svg" alt="Github icon" />
+            <img loading="lazy" src="img/github.svg" alt="Github icon" />
             <p>Github</p>
           </div>
         </div>
