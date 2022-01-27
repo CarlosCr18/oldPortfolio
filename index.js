@@ -67,7 +67,7 @@ const ContentIndex = () => {
   return (
     <div className="contentDiv">
       <NavBar />
-      <div className="footer">
+      <nav className="languageNav" aria-label="Language navigation">
         <button
           data-language={language === "en" ? "en" : "es"}
           onClick={() => {
@@ -94,7 +94,7 @@ const ContentIndex = () => {
         >
           Espanol
         </button>
-      </div>
+      </nav>
       <LoadContent />
     </div>
   );

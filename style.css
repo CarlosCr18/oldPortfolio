@@ -167,7 +167,7 @@ img {
   opacity: 1;
 }
 
-.footer {
+.languageNav {
   width: 100%;
   background-color: var(--navBar-background-color);
   display: flex;

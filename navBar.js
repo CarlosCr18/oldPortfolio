@@ -61,7 +61,7 @@ const NavBarLinks = () => {
 const NavBarIcons = () => {
   let currentNavBarData = language === "en" ? navBarData[0] : navBarData[1];
   return (
-    <nav className="navBar-icons">
+    <nav className="navBar-icons" aria-label="Primary navigation">
       <div className="navBar-list-icons">
         <a
           href="https://github.com/CarlosCr18"

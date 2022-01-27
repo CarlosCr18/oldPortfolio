@@ -101,7 +101,7 @@ const ContentProjects = () => {
   //projects content
   //contenido de proyectos
   return (
-    <section className="content-projects" id="content-projects">
+    <section className="content-projects" id="content-projects" tabIndex="0">
       <div className="projects-text">
         <h2>
           {language === "en"

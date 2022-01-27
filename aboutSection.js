@@ -8,7 +8,7 @@ const ContentAbout = () => {
 
   let currentAboutData = language === "es" ? aboutData[0] : aboutData[1];
   return (
-    <section className="content-about" id="content-about">
+    <section className="content-about" id="content-about" tabIndex="0">
       <div className="content-about-text">
         <h2 className="About-Title">
           {language === "es" ? aboutData[0].title : aboutData[1].title}

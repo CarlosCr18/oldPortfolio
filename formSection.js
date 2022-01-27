@@ -9,7 +9,7 @@
 const ContentContact = () => {
   let formCurrentData = language === "en" ? formData[1] : formData[0];
   return (
-    <section className="content-form" id="content-form">
+    <section className="content-form" id="content-form" tabIndex="0">
       <div className="content-form-container">
         <div className="content-form-text">
           <h2>{formCurrentData.title}</h2>
