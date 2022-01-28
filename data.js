@@ -10,7 +10,7 @@ const navBarData = [
     about: "About",
     projects: "Projects",
     contact: "Contact",
-    resumeUrl: "resumeEnglish.pdf",
+    resumeUrl: "/resumeEnglish.pdf",
   },
   {
     aria: "link de navegacion",
@@ -18,7 +18,7 @@ const navBarData = [
     about: "Acerca",
     projects: "Proyectos",
     contact: "Contacto",
-    resumeUrl: "resume.pdf",
+    resumeUrl: "/resume.pdf",
   },
 ];
 

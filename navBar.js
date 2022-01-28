@@ -90,7 +90,7 @@ const NavBarIcons = () => {
           tabIndex="0"
           aria-label="link to download"
           className="icon resume"
-          download="download"
+          download="Carlos Crespo developer resume"
         >
           <div className="navBar-icon-title resume-icon-title">Resume</div>
           <i className="fa fa-download" aria-hidden="true"></i>
