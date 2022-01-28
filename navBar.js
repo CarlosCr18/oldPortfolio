@@ -87,11 +87,9 @@ const NavBarIcons = () => {
         </a>
         <a
           href={currentNavBarData.resumeUrl}
-          target="_blank"
           tabIndex="0"
           aria-label="link to download"
           className="icon resume"
-          rel="noreferrer"
           download
         >
           <div className="navBar-icon-title resume-icon-title">Resume</div>
