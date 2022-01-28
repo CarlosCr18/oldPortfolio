@@ -10,7 +10,8 @@ const navBarData = [
     about: "About",
     projects: "Projects",
     contact: "Contact",
-    resumeUrl: "/resumeEnglish.pdf",
+    resumeUrl:
+      "https://github.com/CarlosCr18/Portfolio/blob/385023ea7897cd3f48199a076ae464ab9c2a6dc9/resumeEnglish.pdf",
   },
   {
     aria: "link de navegacion",
@@ -18,7 +19,8 @@ const navBarData = [
     about: "Acerca",
     projects: "Proyectos",
     contact: "Contacto",
-    resumeUrl: "/resume.pdf",
+    resumeUrl:
+      "https://github.com/CarlosCr18/Portfolio/blob/0e628bf3929aa2822faae55f312661a7f2d1f8e6/resume.pdf",
   },
 ];
 
