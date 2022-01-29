@@ -38,11 +38,11 @@ const homeData = [
 const aboutData = [
   {
     title: "Acerca de mi",
-    text: "Hola mi nombre es Carlos Crespo \n Soy un ingeniero en mecatronica con un gran interes en la tecnologia que busca siempre expandir sus horizontes \n Soy un desarrollador autodidacta, comenze mi viaje en FreeCodeCamp en agosto del 2021 completando su certificado de Front End Development Libraries en noviembe del 2021 y aun estoy estudiando por mi cuenta a traves de articulos en la red, youtube e internet.",
+    text: "Hola mi nombre es Carlos Crespo \n Soy un ingeniero en mecatronica con un gran interes en la tecnologia que busca siempre expandir sus horizontes \n Soy un desarrollador autodidacta,tengo un certificado de Front End Development Libraries completado en freeCodeCamp y ahora estoy estudiando por mi cuenta a traves de articulos en la red, youtube e internet para llegar a ser un desarrollador full stack.",
   },
   {
     title: "About me",
-    text: "Hello I'm Carlos Crespo,\n  I'm a mechatronics engineer with great interest in technology who is always looking for something new and exciting.\n I'm an autodidact developer, I started my journey in August 2021 at FreeCodeCamp completing their course and recieving a Front End Development Libraries certificate in November 2021, from then on I've been learning through web articles, stackoverflow and youtube.",
+    text: "Hello I'm Carlos Crespo,\n  I'm a mechatronics engineer with great interest in technology who is always looking for something new and exciting.\n I'm an autodidact developer, I have a Front End Development Libraries certificate recived from FreeCodeCamp and now I've been learning through web articles, internet and youtube aspiring to become a full stack developer soon.",
   },
 ];
 
