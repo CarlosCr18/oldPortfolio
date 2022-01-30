@@ -46,4 +46,4 @@ I faced a few challenges for this webpage in different aspects:
 ### What I would do different if I do it again
 
 - I would use the useContext hook for the webpage language.
-- I would focus on performance issues sooner.
+- I would focus on performance issues sooner and use simple HTML for static content.
