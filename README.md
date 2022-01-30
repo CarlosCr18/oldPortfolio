@@ -21,7 +21,7 @@ The technologies I used to develop this webpage.
   It is used to style and animate some of the elements of the webpage and to ensure responsiveness with different devices.
 
 - Javascript:
-  It is used to map the data from the JSON object and conditionally render it with React, to handle the navBar for small screens and to handle the formsubmit with axios and formsubmit.co.
+  It is used to map the data from the data Javascript object and conditionally render it with React, to handle the navBar for small screens and to handle the formsubmit with axios and formsubmit.co.
 
 - React:
   It's the core of the webpage, all the webpage is made of React components using hooks.

@@ -5,13 +5,9 @@ let counter = 0;
 const ContentIndex = () => {
   //We use useState hook to keep track of the language and rerender the content
   //El hook useState es usado para recargar el contenido de la pagina segun la variable del lenguaje
-  const [reload, setReload] = React.useState(true);
+  const [language, setLanguage] = React.useState("es");
 
-  //function to set language
-  //funcion para cambiar el lenguaje
-  const setLanguages = (lang) => {
-    language = lang;
-  };
+  let data = language == "es" ? datajson.es : datajson.en;
 
   //Event listeners to change the slider in navBar page
   //the moveSlider function is called again after a timeout so it gets to the correct position when resizing the window
@@ -66,14 +62,13 @@ const ContentIndex = () => {
 
   return (
     <div className="contentDiv">
-      <NavBar />
+      <NavBar data={data.navBarData} />
       <nav className="languageNav" aria-label="Language navigation">
         <button
           data-language={language === "en" ? "en" : "es"}
           onClick={() => {
-            setLanguages("en");
+            setLanguage("en");
             counter = 0;
-            setReload(() => !reload);
             setTimeout(() => {
               moveSlider(counter);
             }, 15);
@@ -84,9 +79,8 @@ const ContentIndex = () => {
         <button
           data-language={language === "en" ? "es" : "en"}
           onClick={() => {
-            setLanguages("es");
+            setLanguage("es");
             counter = 0;
-            setReload(() => !reload);
             setTimeout(() => {
               moveSlider(counter);
             }, 15);
@@ -95,7 +89,7 @@ const ContentIndex = () => {
           Espanol
         </button>
       </nav>
-      <LoadContent />
+      <LoadContent data={data} />
     </div>
   );
 };

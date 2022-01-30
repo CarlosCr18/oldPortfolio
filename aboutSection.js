@@ -1,4 +1,4 @@
-const ContentAbout = () => {
+const ContentAbout = ({ currentAboutData }) => {
   //About me section
   //first set the data from source depending on the language
   //we split the text into pieces and adding carriage returns to style the text
@@ -6,15 +6,14 @@ const ContentAbout = () => {
   // Primero sleccionamos la informacion dependiendo de lenguaje
   // Separamos el texto en piezas para poder darle estilo al texto
 
-  let currentAboutData = language === "es" ? aboutData[0] : aboutData[1];
+  // let currentAboutData = language === "es" ? aboutData[0] : aboutData[1];
   return (
     <section className="content-about" id="content-about" tabIndex="0">
       <div className="content-about-text">
-        <h2 className="About-Title">
-          {language === "es" ? aboutData[0].title : aboutData[1].title}
-        </h2>
+        <h2 className="About-Title">{currentAboutData.title}</h2>
         <div className="About-text">
           {currentAboutData.text.split("\n")[0]}
+          <br></br>
           <br></br>
           {currentAboutData.text.split("\n")[1]}
           <br></br>

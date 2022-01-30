@@ -5,7 +5,7 @@
 // La informacion es asignada dependiendo del idioma
 // se mapea la informacion de los proyectos para renderizar todos los proyectos
 
-const ContentProjects = () => {
+const ContentProjects = ({ currentProjectsData }) => {
   let smallScreen =
     window
       .getComputedStyle(document.documentElement)
@@ -13,11 +13,10 @@ const ContentProjects = () => {
       ? true
       : false;
 
-  let currentContent =
-    language === "en" ? projectsData[0].english : projectsData[0].spanish;
-
-  const projectsGallery = currentContent.map((e, index) => (
-    <ProjectsCard project={e} key={index} />
+  // let currentContent =
+  //   language === "en" ? projectsData[0].english : projectsData[0].spanish;
+  const projectsGallery = currentProjectsData.projects.map((e, index) => (
+    <ProjectsCard currentProject={e} key={index} />
   ));
 
   // the useEffect hook is used to set the active class on project-card elements at creation
@@ -103,16 +102,8 @@ const ContentProjects = () => {
   return (
     <section className="content-projects" id="content-projects" tabIndex="0">
       <div className="projects-text">
-        <h2>
-          {language === "en"
-            ? projectsData[0].englishTitle
-            : projectsData[0].spanishTitle}
-        </h2>
-        <div className="projects-text-text">
-          {language === "en"
-            ? projectsData[0].englishText
-            : projectsData[0].spanishText}
-        </div>
+        <h2>{currentProjectsData.title}</h2>
+        <div className="projects-text-text">{currentProjectsData.text}</div>
       </div>
       <div className="projects-container">{projectsGallery}</div>
     </section>
@@ -121,10 +112,9 @@ const ContentProjects = () => {
 
 //specific project content
 //Contenido especifico de un proyecto
-const ProjectsCard = (project) => {
-  let currentProject = project.project;
+const ProjectsCard = ({ currentProject }) => {
   const currentProjectSkills = currentProject.skills.map((e, index) => (
-    <ProjectSkills key={index} skills={e} />
+    <ProjectSkills key={index} currentSkills={e} />
   ));
 
   return (
@@ -169,9 +159,7 @@ const ProjectsCard = (project) => {
 
 //specific project skills images
 //imagenes de skills de un proyecto en especifico
-function ProjectSkills(skills) {
-  let currentSkills = skills.skills;
-
+function ProjectSkills({ currentSkills }) {
   return (
     <img
       className="skills-img"

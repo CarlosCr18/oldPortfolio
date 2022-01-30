@@ -6,8 +6,8 @@
 // primero se obtiene la informacion dependiendo del lenguaje y se separa en piezas para darle estilo.
 // El envio del formato es manejado a traves del sitio formsubmit.co y axio con el cual a partir del resultado de la operacion dara un resultado que el usuario puede ver
 
-const ContentContact = () => {
-  let formCurrentData = language === "en" ? formData[1] : formData[0];
+const ContentContact = ({ formCurrentData }) => {
+  // let formCurrentData = language === "en" ? formData[1] : formData[0];
   return (
     <section className="content-form" id="content-form" tabIndex="0">
       <div className="content-form-container">
