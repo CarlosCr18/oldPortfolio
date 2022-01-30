@@ -3,6 +3,34 @@
   <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
 
+    <link
+      rel="preload"
+      href="/fonts/abel-v12-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/patua-one-v15-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/luxurious-roman-v1-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/lora-v20-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +45,12 @@
     <button class="burgerMenu">☰</button>
     <div class="container" id="ContentContainer"></div>
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
+      integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
       src="https://unpkg.com/react@17/umd/react.production.min.js"
       defer
     ></script>
@@ -24,12 +58,6 @@
     <script
       src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
       defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
-      integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     ></script>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
@@ -46,5 +74,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="onScroll.js" type="text/babel" defer></script>
     <script src="burgerMenu.js" type="text/babel" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </body>
 </html>

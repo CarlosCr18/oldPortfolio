@@ -24,15 +24,40 @@ const ContentAbout = ({ currentAboutData }) => {
       <div className="About-skills">
         <h3>Skills</h3>
         <div className="About-skills-list">
-          <img loading="lazy" src="img/html.webp" alt="html icon" />
-          <img loading="lazy" src="img/javascript.svg" alt="javascript icon" />
-          <img loading="lazy" src="img/CSS3.svg" alt="css icon" />
+          <img
+            loading="lazy"
+            src="img/html.webp"
+            alt="html icon"
+            decoding="async"
+          />
+          <img
+            loading="lazy"
+            src="img/javascript.svg"
+            alt="javascript icon"
+            decoding="async"
+          />
+          <img
+            loading="lazy"
+            src="img/CSS3.svg"
+            alt="css icon"
+            decoding="async"
+          />
           <div>
-            <img loading="lazy" src="img/react.webp" alt="React icon" />
+            <img
+              loading="lazy"
+              src="img/react.webp"
+              alt="React icon"
+              decoding="async"
+            />
             <p>React</p>
           </div>
           <div>
-            <img loading="lazy" src="img/github.svg" alt="Github icon" />
+            <img
+              loading="lazy"
+              src="img/github.svg"
+              alt="Github icon"
+              decoding="async"
+            />
             <p>Github</p>
           </div>
         </div>

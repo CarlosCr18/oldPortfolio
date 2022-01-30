@@ -127,6 +127,7 @@ const ProjectsCard = ({ currentProject }) => {
         alt={currentProject.imgAlt}
         src={currentProject.img}
         loading="lazy"
+        decoding="async"
       />
       <div className="project-card-container">{currentProjectSkills}</div>
       <div className="project-card-container">
@@ -167,6 +168,7 @@ function ProjectSkills({ currentSkills }) {
       src={currentSkills.url}
       alt={currentSkills.alt}
       loading="lazy"
+      decoding="async"
     />
   );
 }
