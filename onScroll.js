@@ -17,27 +17,19 @@ gsap.to(".navBar", {
     end: "bottom",
     toggleActions: "play none none reverse ",
     markers: false,
-    onEnter: () => {
-      if (
-        window
-          .getComputedStyle(document.documentElement)
-          .getPropertyValue("--small-screen") == 0
-      ) {
-        setTimeout(() => {
+    onEnter: function onEnter() {
+      if (window.getComputedStyle(document.documentElement).getPropertyValue("--small-screen") == 0) {
+        setTimeout(function () {
           document.querySelector(".navBar").style.position = "fixed";
         }, 30);
       }
     },
-    onLeaveBack: () => {
-      if (
-        window
-          .getComputedStyle(document.documentElement)
-          .getPropertyValue("--small-screen") == 0
-      ) {
+    onLeaveBack: function onLeaveBack() {
+      if (window.getComputedStyle(document.documentElement).getPropertyValue("--small-screen") == 0) {
         document.querySelector(".navBar").style.position = "relative";
       }
-    },
-  },
+    }
+  }
 });
 gsap.to("#content-about", {
   scrollTrigger: {
@@ -45,15 +37,15 @@ gsap.to("#content-about", {
     start: "top-=10% center",
     end: "bottom",
     markers: false,
-    onEnter: () => {
+    onEnter: function onEnter() {
       moveSlider(1);
       counter = 1;
     },
-    onLeaveBack: () => {
+    onLeaveBack: function onLeaveBack() {
       moveSlider(0);
       counter = 0;
-    },
-  },
+    }
+  }
 });
 gsap.to("#content-projects", {
   scrollTrigger: {
@@ -61,15 +53,15 @@ gsap.to("#content-projects", {
     start: "top-=10% center",
     end: "bottom",
     markers: false,
-    onEnter: () => {
+    onEnter: function onEnter() {
       moveSlider(2);
       counter = 2;
     },
-    onLeaveBack: () => {
+    onLeaveBack: function onLeaveBack() {
       moveSlider(1);
       counter = 1;
-    },
-  },
+    }
+  }
 });
 
 gsap.to("#content-form", {
@@ -78,15 +70,15 @@ gsap.to("#content-form", {
     start: "top-=10% center",
     end: "bottom",
     markers: false,
-    onEnter: () => {
+    onEnter: function onEnter() {
       moveSlider(3);
       counter = 3;
     },
-    onLeaveBack: () => {
+    onLeaveBack: function onLeaveBack() {
       moveSlider(2);
       counter = 2;
-    },
-  },
+    }
+  }
 });
 
 gsap.to(".content-about-text", {
@@ -98,8 +90,8 @@ gsap.to(".content-about-text", {
     start: "top-=20% center",
     end: "bottom",
     markers: false,
-    toggleActions: "play none none reverse ",
-  },
+    toggleActions: "play none none reverse "
+  }
 });
 gsap.to(".About-skills", {
   opacity: 1,
@@ -109,8 +101,8 @@ gsap.to(".About-skills", {
     start: "top-=20% center",
     end: "bottom",
     markers: false,
-    toggleActions: "play none none reverse ",
-  },
+    toggleActions: "play none none reverse "
+  }
 });
 gsap.to(".projects-text", {
   opacity: 1,
@@ -120,8 +112,8 @@ gsap.to(".projects-text", {
     start: "top-=20% center",
     end: "bottom",
     markers: false,
-    toggleActions: "play none none reverse ",
-  },
+    toggleActions: "play none none reverse "
+  }
 });
 gsap.to(".projects-container", {
   opacity: 1,
@@ -132,6 +124,6 @@ gsap.to(".projects-container", {
     start: "top center",
     end: "bottom",
     markers: false,
-    toggleActions: "play none none reverse ",
-  },
+    toggleActions: "play none none reverse "
+  }
 });

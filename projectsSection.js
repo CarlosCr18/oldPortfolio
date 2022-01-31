@@ -5,37 +5,30 @@
 // La informacion es asignada dependiendo del idioma
 // se mapea la informacion de los proyectos para renderizar todos los proyectos
 
-const ContentProjects = ({ currentProjectsData }) => {
-  let smallScreen =
-    window
-      .getComputedStyle(document.documentElement)
-      .getPropertyValue("--small-screen") == 1
-      ? true
-      : false;
+var ContentProjects = function ContentProjects(_ref) {
+  var currentProjectsData = _ref.currentProjectsData;
+
+  var smallScreen = window.getComputedStyle(document.documentElement).getPropertyValue("--small-screen") == 1 ? true : false;
 
   // let currentContent =
   //   language === "en" ? projectsData[0].english : projectsData[0].spanish;
-  const projectsGallery = currentProjectsData.projects.map((e, index) => (
-    <ProjectsCard currentProject={e} key={index} />
-  ));
+  var projectsGallery = currentProjectsData.projects.map(function (e, index) {
+    return React.createElement(ProjectsCard, { currentProject: e, key: index });
+  });
 
   // the useEffect hook is used to set the active class on project-card elements at creation
   // Se usa el hook useEffect para que en la creacion del componente se asigne la clase active
   //en los elementos project-card
 
-  React.useEffect(() => {
+  React.useEffect(function () {
     if (smallScreen) {
-      document.querySelectorAll(".project-card").forEach((element, index) => {
+      document.querySelectorAll(".project-card").forEach(function (element, index) {
         element.classList.remove("project-card-inactive");
         element.classList.add("project-card-active");
       });
     } else {
-      document
-        .querySelectorAll(".project-card")[0]
-        .classList.remove("project-card-inactive");
-      document
-        .querySelectorAll(".project-card")[0]
-        .classList.add("project-card-active");
+      document.querySelectorAll(".project-card")[0].classList.remove("project-card-inactive");
+      document.querySelectorAll(".project-card")[0].classList.add("project-card-active");
     }
   }, []);
 
@@ -46,10 +39,10 @@ const ContentProjects = ({ currentProjectsData }) => {
   // cuando el componente es creado se registra un listener para el click sobre su imagen
   // obtiene un valor index y agrega al proyecto index con la clase project-card-active
   // y le retira del resto de los proyectos
-  const cardsActivator = (indexPassed) => {
-    let content = document.querySelectorAll(".project-card");
+  var cardsActivator = function cardsActivator(indexPassed) {
+    var content = document.querySelectorAll(".project-card");
 
-    content.forEach((element, index) => {
+    content.forEach(function (element, index) {
       if (index === indexPassed) {
         element.classList.remove("project-card-inactive");
         element.classList.add("project-card-active");
@@ -61,7 +54,7 @@ const ContentProjects = ({ currentProjectsData }) => {
       }
 
       if (element.classList.contains("project-card-active")) {
-        element.children[3].onclick = () => {
+        element.children[3].onclick = function () {
           element.children[5].children[0].click();
         };
       }
@@ -72,103 +65,127 @@ const ContentProjects = ({ currentProjectsData }) => {
   //only on create of the component
   //useEffect para llamar a la funcion cardsActivator y registrar el listener de los projectos
   //solo en la creacion del componente
-  React.useEffect(() => {
-    let content = document.querySelectorAll(".project-card");
-    content.forEach((element, index) => {
-      element.addEventListener(
-        "click",
-        () => {
-          cardsActivator(index);
-        },
-        true
-      );
+  React.useEffect(function () {
+    var content = document.querySelectorAll(".project-card");
+    content.forEach(function (element, index) {
+      element.addEventListener("click", function () {
+        cardsActivator(index);
+      }, true);
     });
 
-    return () => {
-      content.forEach((element) => {
-        element.addEventListener(
-          "click",
-          () => {
-            cardsActivator();
-          },
-          true
-        );
+    return function () {
+      content.forEach(function (element) {
+        element.addEventListener("click", function () {
+          cardsActivator();
+        }, true);
       });
     };
   }, []);
 
   //projects content
   //contenido de proyectos
-  return (
-    <section className="content-projects" id="content-projects" tabIndex="0">
-      <div className="projects-text">
-        <h2>{currentProjectsData.title}</h2>
-        <div className="projects-text-text">{currentProjectsData.text}</div>
-      </div>
-      <div className="projects-container">{projectsGallery}</div>
-    </section>
+  return React.createElement(
+    "section",
+    { className: "content-projects", id: "content-projects", tabIndex: "0" },
+    React.createElement(
+      "div",
+      { className: "projects-text" },
+      React.createElement(
+        "h2",
+        null,
+        currentProjectsData.title
+      ),
+      React.createElement(
+        "div",
+        { className: "projects-text-text" },
+        currentProjectsData.text
+      )
+    ),
+    React.createElement(
+      "div",
+      { className: "projects-container" },
+      projectsGallery
+    )
   );
 };
 
 //specific project content
 //Contenido especifico de un proyecto
-const ProjectsCard = ({ currentProject }) => {
-  const currentProjectSkills = currentProject.skills.map((e, index) => (
-    <ProjectSkills key={index} currentSkills={e} />
-  ));
+var ProjectsCard = function ProjectsCard(_ref2) {
+  var currentProject = _ref2.currentProject;
 
-  return (
-    <div className="project-card project-card-inactive" tabIndex="0">
-      <h3 className="project-card-title">{currentProject.title}</h3>
-      <hr></hr>
-      <br></br>
-      <img
-        className="project-card-img"
-        alt={currentProject.imgAlt}
-        src={currentProject.img}
-        loading="lazy"
-        decoding="async"
-      />
-      <div className="project-card-container">{currentProjectSkills}</div>
-      <div className="project-card-container">
-        <a
-          href={currentProject.liveUrl}
-          aria-label="link to live page"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Live
-        </a>
-        <a
-          href={currentProject.github}
-          aria-label="link to github page"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fa fa-github" />
-        </a>
-      </div>
-      <div className="project-card-text">
-        <hr></hr>
-        <br></br>
-        {currentProject.text}
-        <br></br>
-      </div>
-    </div>
+  var currentProjectSkills = currentProject.skills.map(function (e, index) {
+    return React.createElement(ProjectSkills, { key: index, currentSkills: e });
+  });
+
+  return React.createElement(
+    "div",
+    { className: "project-card project-card-inactive", tabIndex: "0" },
+    React.createElement(
+      "h3",
+      { className: "project-card-title" },
+      currentProject.title
+    ),
+    React.createElement("hr", null),
+    React.createElement("br", null),
+    React.createElement("img", {
+      className: "project-card-img",
+      alt: currentProject.imgAlt,
+      src: currentProject.img,
+      loading: "lazy",
+      decoding: "async"
+    }),
+    React.createElement(
+      "div",
+      { className: "project-card-container" },
+      currentProjectSkills
+    ),
+    React.createElement(
+      "div",
+      { className: "project-card-container" },
+      React.createElement(
+        "a",
+        {
+          href: currentProject.liveUrl,
+          "aria-label": "link to live page",
+          target: "_blank",
+          rel: "noreferrer"
+        },
+        "Live"
+      ),
+      React.createElement(
+        "a",
+        {
+          href: currentProject.github,
+          "aria-label": "link to github page",
+          target: "_blank",
+          rel: "noreferrer"
+        },
+        React.createElement("i", { className: "fa fa-github" })
+      )
+    ),
+    React.createElement(
+      "div",
+      { className: "project-card-text" },
+      React.createElement("hr", null),
+      React.createElement("br", null),
+      currentProject.text,
+      React.createElement("br", null)
+    )
   );
 };
 
 //specific project skills images
 //imagenes de skills de un proyecto en especifico
-function ProjectSkills({ currentSkills }) {
-  return (
-    <img
-      className="skills-img"
-      key={currentSkills.url}
-      src={currentSkills.url}
-      alt={currentSkills.alt}
-      loading="lazy"
-      decoding="async"
-    />
-  );
+function ProjectSkills(_ref3) {
+  var currentSkills = _ref3.currentSkills;
+
+  return React.createElement("img", {
+    className: "skills-img",
+    key: currentSkills.url,
+    src: currentSkills.url,
+    alt: currentSkills.alt,
+    loading: "lazy",
+    decoding: "async"
+  });
 }

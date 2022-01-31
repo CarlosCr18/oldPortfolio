@@ -1,13 +1,15 @@
 //Holder Section to return semantically correct html
 //Seccion para regresar html semanticamente correcto
 
-const LoadContent = ({ data }) => {
-  return (
-    <main id="main">
-      <ContentHome currentHomeData={data.homeData} />
-      <ContentAbout currentAboutData={data.aboutData} />
-      <ContentProjects currentProjectsData={data.projectsData} />
-      <ContentContact formCurrentData={data.formData} />
-    </main>
+var LoadContent = function LoadContent(_ref) {
+  var data = _ref.data;
+
+  return React.createElement(
+    "main",
+    { id: "main" },
+    React.createElement(ContentHome, { currentHomeData: data.homeData }),
+    React.createElement(ContentAbout, { currentAboutData: data.aboutData }),
+    React.createElement(ContentProjects, { currentProjectsData: data.projectsData }),
+    React.createElement(ContentContact, { formCurrentData: data.formData })
   );
 };
