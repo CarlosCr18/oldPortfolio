@@ -533,7 +533,7 @@ img {
 
 .content-projects {
   display: flex;
-  min-height: 70vh;
+  max-height: 109vh;
   width: 100vw;
   padding: min(5rem, 10%);
   position: relative;
@@ -583,6 +583,7 @@ img {
   text-overflow: ellipsis;
   font-size: var(--step-0);
   padding: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .projects-container {
@@ -600,7 +601,7 @@ img {
 .project-card {
   text-align: center;
   border-radius: 30% / 10%;
-  max-width: min(5rem, 15%);
+  max-width: min(5rem, 7vw);
   overflow: hidden;
   transition: all 0.35s ease-in;
   display: flex;
@@ -638,19 +639,19 @@ img {
 }
 
 .project-card-active {
-  max-width: min(35rem, 75%);
-  width: min(35rem, 75%);
+  max-width: min(35rem, 75vw);
+  width: min(35rem, 75vw);
   border-radius: 10%;
   opacity: 1;
   margin-inline: 0.3rem;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
 
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   color: #333;
-  transition: all 0.35s ease;
+  transition: all 0.45s ease;
 }
 
 .project-card-active:hover,
@@ -970,12 +971,17 @@ footer {
     flex-wrap: wrap;
     gap: 2rem;
   }
+
+  .content-projects {
+    max-height: 100% !important;
+  }
   .content-projects::after {
     top: -4%;
   }
 
   .projects-text {
     background: rgba(255, 255, 255, 0.95);
+    padding-bottom: 2.5rem;
   }
 
   .project-card-container a {
