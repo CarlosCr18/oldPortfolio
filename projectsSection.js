@@ -8,7 +8,12 @@
 var ContentProjects = function ContentProjects(_ref) {
   var currentProjectsData = _ref.currentProjectsData;
 
-  var smallScreen = window.getComputedStyle(document.documentElement).getPropertyValue("--small-screen") == 1 ? true : false;
+  var smallScreen =
+    window
+      .getComputedStyle(document.documentElement)
+      .getPropertyValue("--small-screen") == 1
+      ? true
+      : false;
 
   // let currentContent =
   //   language === "en" ? projectsData[0].english : projectsData[0].spanish;
@@ -22,13 +27,19 @@ var ContentProjects = function ContentProjects(_ref) {
 
   React.useEffect(function () {
     if (smallScreen) {
-      document.querySelectorAll(".project-card").forEach(function (element, index) {
-        element.classList.remove("project-card-inactive");
-        element.classList.add("project-card-active");
-      });
+      document
+        .querySelectorAll(".project-card")
+        .forEach(function (element, index) {
+          element.classList.remove("project-card-inactive");
+          element.classList.add("project-card-active");
+        });
     } else {
-      document.querySelectorAll(".project-card")[0].classList.remove("project-card-inactive");
-      document.querySelectorAll(".project-card")[0].classList.add("project-card-active");
+      document
+        .querySelectorAll(".project-card")[0]
+        .classList.remove("project-card-inactive");
+      document
+        .querySelectorAll(".project-card")[0]
+        .classList.add("project-card-active");
     }
   }, []);
 
@@ -68,16 +79,24 @@ var ContentProjects = function ContentProjects(_ref) {
   React.useEffect(function () {
     var content = document.querySelectorAll(".project-card");
     content.forEach(function (element, index) {
-      element.addEventListener("click", function () {
-        cardsActivator(index);
-      }, true);
+      element.addEventListener(
+        "click",
+        function () {
+          cardsActivator(index);
+        },
+        true
+      );
     });
 
     return function () {
       content.forEach(function (element) {
-        element.addEventListener("click", function () {
-          cardsActivator();
-        }, true);
+        element.addEventListener(
+          "click",
+          function () {
+            cardsActivator();
+          },
+          true
+        );
       });
     };
   }, []);
@@ -90,11 +109,7 @@ var ContentProjects = function ContentProjects(_ref) {
     React.createElement(
       "div",
       { className: "projects-text" },
-      React.createElement(
-        "h2",
-        null,
-        currentProjectsData.title
-      ),
+      React.createElement("h2", null, currentProjectsData.title),
       React.createElement(
         "div",
         { className: "projects-text-text" },
@@ -133,7 +148,7 @@ var ProjectsCard = function ProjectsCard(_ref2) {
       alt: currentProject.imgAlt,
       src: currentProject.img,
       loading: "lazy",
-      decoding: "async"
+      decoding: "async",
     }),
     React.createElement(
       "div",
@@ -149,7 +164,7 @@ var ProjectsCard = function ProjectsCard(_ref2) {
           href: currentProject.liveUrl,
           "aria-label": "link to live page",
           target: "_blank",
-          rel: "noreferrer"
+          rel: "noreferrer",
         },
         "Live"
       ),
@@ -159,7 +174,7 @@ var ProjectsCard = function ProjectsCard(_ref2) {
           href: currentProject.github,
           "aria-label": "link to github page",
           target: "_blank",
-          rel: "noreferrer"
+          rel: "noreferrer",
         },
         React.createElement("i", { className: "fa fa-github" })
       )
@@ -186,6 +201,6 @@ function ProjectSkills(_ref3) {
     src: currentSkills.url,
     alt: currentSkills.alt,
     loading: "lazy",
-    decoding: "async"
+    decoding: "async",
   });
 }

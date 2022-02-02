@@ -311,6 +311,8 @@ img {
   left: -0.075rem;
   z-index: 1;
   background: linear-gradient(27deg, #27940cc7 75%, #1b6b05c7 100%);
+  background: -moz-linear-gradient(27deg, #27940cc7 75%, #1b6b05c7 100%);
+  background: -webkit-linear-gradient(27deg, #27940cc7 75%, #1b6b05c7 100%);
   height: 3rem;
   width: 0rem;
   transition: all 0.3s ease-in;
@@ -323,6 +325,8 @@ img {
   position: relative;
   padding-bottom: min(3rem, 15%);
   background: linear-gradient(185deg, #212221 25%, #222 80%);
+  background: -moz-linear-gradient(185deg, #212221 25%, #222 80%);
+  background: -webkit-linear-gradient(185deg, #212221 25%, #222 80%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -541,7 +545,17 @@ img {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(
-    180deg,
+    -90deg,
+    var(--background-color-step-0),
+    var(--background-color-step-3)
+  );
+  background: -moz-linear-gradient(
+    -90deg,
+    var(--background-color-step-0),
+    var(--background-color-step-3)
+  );
+  background: -webkit-linear-gradient(
+    -90deg,
     var(--background-color-step-0),
     var(--background-color-step-3)
   );
@@ -715,8 +729,16 @@ img {
   justify-content: space-around;
   flex-wrap: wrap;
   background: linear-gradient(-45deg, #313030, #22c759, #23a6d5, #dce6e3);
+  background: -moz-linear-gradient(-45deg, #313030, #22c759, #23a6d5, #dce6e3);
+  background: -webkit-linear-gradient(
+    -45deg,
+    #313030,
+    #22c759,
+    #23a6d5,
+    #dce6e3
+  );
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 12s ease infinite;
 }
 
 @keyframes gradient {
@@ -741,6 +763,7 @@ img {
   justify-content: space-around;
   margin-bottom: 10%;
   gap: 2rem;
+  font-size: var(--step-0);
 }
 .content-form-text h2 {
   text-align: center;
@@ -846,7 +869,7 @@ textarea:focus-within {
   position: relative;
 
   background: #fff;
-
+  color: #000;
   border-radius: 5px;
   border: solid 1px black;
   font-size: 1rem;
@@ -868,6 +891,8 @@ textarea:focus-within {
   border-radius: 5px;
   z-index: -1;
   background: linear-gradient(180deg, #2e8ff0 0%, #1164b8 80%);
+  background: -moz-linear-gradient(180deg, #2e8ff0 0%, #1164b8 80%);
+  background: -webkit-linear-gradient(180deg, #2e8ff0 0%, #1164b8 80%);
   transition: all 0.5s;
 }
 .form button:hover::after,
