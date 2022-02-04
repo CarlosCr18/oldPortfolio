@@ -39,7 +39,10 @@ gsap.to(".navBar", {
     },
   },
 });
-gsap.to("#content-about", {
+gsap.to(".content-about-text", {
+  x: 0,
+  opacity: 1,
+  duration: 1,
   scrollTrigger: {
     trigger: "#content-about",
     start: "top-=10% center",
@@ -55,7 +58,9 @@ gsap.to("#content-about", {
     },
   },
 });
-gsap.to("#content-projects", {
+gsap.to(".projects-text", {
+  opacity: 1,
+  duration: 1,
   scrollTrigger: {
     trigger: "#content-projects",
     start: "top-=10% center",
@@ -72,7 +77,9 @@ gsap.to("#content-projects", {
   },
 });
 
-gsap.to("#content-form", {
+gsap.to(".content-form-container", {
+  opacity: 1,
+  duration: 1,
   scrollTrigger: {
     trigger: "#content-form",
     start: "top-=10% center",
@@ -89,34 +96,11 @@ gsap.to("#content-form", {
   },
 });
 
-gsap.to(".content-about-text", {
-  x: 0,
-  opacity: 1,
-  duration: 1,
-  scrollTrigger: {
-    trigger: "#content-about",
-    start: "top-=20% center",
-    end: "bottom",
-    markers: false,
-    toggleActions: "play none none reverse ",
-  },
-});
 gsap.to(".About-skills", {
   opacity: 1,
   duration: 1.5,
   scrollTrigger: {
     trigger: "#content-about",
-    start: "top-=20% center",
-    end: "bottom",
-    markers: false,
-    toggleActions: "play none none reverse ",
-  },
-});
-gsap.to(".projects-text", {
-  opacity: 1,
-  duration: 1,
-  scrollTrigger: {
-    trigger: "#content-projects",
     start: "top-=20% center",
     end: "bottom",
     markers: false,

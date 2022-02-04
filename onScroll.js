@@ -17,82 +17,88 @@ gsap.to(".navBar", {
     end: "bottom",
     toggleActions: "play none none reverse ",
     markers: false,
-    onEnter: function onEnter() {
-      if (window.getComputedStyle(document.documentElement).getPropertyValue("--small-screen") == 0) {
-        setTimeout(function () {
+    onEnter: () => {
+      if (
+        window
+          .getComputedStyle(document.documentElement)
+          .getPropertyValue("--small-screen") == 0
+      ) {
+        setTimeout(() => {
           document.querySelector(".navBar").style.position = "fixed";
         }, 30);
       }
     },
-    onLeaveBack: function onLeaveBack() {
-      if (window.getComputedStyle(document.documentElement).getPropertyValue("--small-screen") == 0) {
+    onLeaveBack: () => {
+      if (
+        window
+          .getComputedStyle(document.documentElement)
+          .getPropertyValue("--small-screen") == 0
+      ) {
         document.querySelector(".navBar").style.position = "relative";
       }
-    }
-  }
-});
-gsap.to("#content-about", {
-  scrollTrigger: {
-    trigger: "#content-about",
-    start: "top-=10% center",
-    end: "bottom",
-    markers: false,
-    onEnter: function onEnter() {
-      moveSlider(1);
-      counter = 1;
     },
-    onLeaveBack: function onLeaveBack() {
-      moveSlider(0);
-      counter = 0;
-    }
-  }
+  },
 });
-gsap.to("#content-projects", {
-  scrollTrigger: {
-    trigger: "#content-projects",
-    start: "top-=10% center",
-    end: "bottom",
-    markers: false,
-    onEnter: function onEnter() {
-      moveSlider(2);
-      counter = 2;
-    },
-    onLeaveBack: function onLeaveBack() {
-      moveSlider(1);
-      counter = 1;
-    }
-  }
-});
-
-gsap.to("#content-form", {
-  scrollTrigger: {
-    trigger: "#content-form",
-    start: "top-=10% center",
-    end: "bottom",
-    markers: false,
-    onEnter: function onEnter() {
-      moveSlider(3);
-      counter = 3;
-    },
-    onLeaveBack: function onLeaveBack() {
-      moveSlider(2);
-      counter = 2;
-    }
-  }
-});
-
 gsap.to(".content-about-text", {
   x: 0,
   opacity: 1,
   duration: 1,
   scrollTrigger: {
     trigger: "#content-about",
-    start: "top-=20% center",
+    start: "top-=10% center",
     end: "bottom",
     markers: false,
-    toggleActions: "play none none reverse "
-  }
+    toggleActions: "play none none reverse ",
+    onEnter: () => {
+      moveSlider(1);
+      counter = 1;
+    },
+    onLeaveBack: () => {
+      moveSlider(0);
+      counter = 0;
+    },
+  },
 });
+gsap.to(".projects-text", {
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#content-projects",
+    start: "top-=10% center",
+    end: "bottom",
+    markers: false,
+    toggleActions: "play none none reverse ",
+    onEnter: () => {
+      moveSlider(2);
+      counter = 2;
+    },
+    onLeaveBack: () => {
+      moveSlider(1);
+      counter = 1;
+    },
+  },
+});
+
+gsap.to(".content-form-container", {
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#content-form",
+    start: "top-=10% center",
+    end: "bottom",
+    markers: false,
+    toggleActions: "play none none reverse ",
+    onEnter: () => {
+      moveSlider(3);
+      counter = 3;
+    },
+    onLeaveBack: () => {
+      moveSlider(2);
+      counter = 2;
+    },
+  },
+});
+
 gsap.to(".About-skills", {
   opacity: 1,
   duration: 1.5,
@@ -101,19 +107,8 @@ gsap.to(".About-skills", {
     start: "top-=20% center",
     end: "bottom",
     markers: false,
-    toggleActions: "play none none reverse "
-  }
-});
-gsap.to(".projects-text", {
-  opacity: 1,
-  duration: 1,
-  scrollTrigger: {
-    trigger: "#content-projects",
-    start: "top-=20% center",
-    end: "bottom",
-    markers: false,
-    toggleActions: "play none none reverse "
-  }
+    toggleActions: "play none none reverse ",
+  },
 });
 gsap.to(".projects-container", {
   opacity: 1,
@@ -124,6 +119,6 @@ gsap.to(".projects-container", {
     start: "top center",
     end: "bottom",
     markers: false,
-    toggleActions: "play none none reverse "
-  }
+    toggleActions: "play none none reverse ",
+  },
 });
