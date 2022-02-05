@@ -571,8 +571,9 @@ img {
 }
 
 .projects-container {
-  padding: 6rem;
+  padding-inline: 6rem;
   padding-top: 3rem;
+  padding-bottom: 15rem;
   width: 100%;
   height: auto;
   display: flex;
@@ -1003,15 +1004,22 @@ footer {
     text-align: center;
     white-space: normal;
   }
+
   .project-card-img {
     max-width: min(40rem, 100%);
     max-height: min(40rem, 100%);
   }
-  .project-card-active {
+  .project-card-active,
+  .project-card-inactive {
     border-radius: 30% / 10%;
     max-width: 90%;
     width: 90%;
     margin-inline: 0;
+  }
+
+  .project-card-inactive:hover:after {
+    width: 0;
+    height: 0;
   }
 
   .project-card:focus-visible,
