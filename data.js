@@ -19,8 +19,8 @@ var datajson = {
       text: "This is my portfolio.",
     },
     aboutData: {
-      title: "About me",
-      text: "Hello I'm Carlos Crespo,\n  I'm a mechatronics engineer with great interest in technology who is always looking for something new and exciting.\n I'm an autodidact developer, I have a Front End Development Libraries certificate recived from FreeCodeCamp and now I've been learning through web articles, internet and youtube aspiring to become a full stack developer soon.",
+      title: "",
+      text: "I'm a mechatronics engineer\nI'm a wev developer\n I'm an autodidact developer, I have a Front End Development Libraries certificate recived from FreeCodeCamp and now I'm becoming a full stack developer.",
     },
     projectsData: {
       title: "Projects",
@@ -39,29 +39,6 @@ var datajson = {
               url: "img/html.webp",
               alt: "HTML5",
             },
-            {
-              url: "img/javascript.svg",
-              alt: "Javascript",
-            },
-            {
-              url: "img/CSS3.svg",
-              alt: "CSS3",
-            },
-            {
-              url: "img/react.webp",
-              alt: "React",
-            },
-          ],
-        },
-        {
-          id: "Pomodoro",
-          title: "Pomodoro App",
-          img: "img/pomodoro.webp",
-          imgAlt: "project pomodoro preview image",
-          liveUrl: "https://carloscr18.github.io/pomodoro/",
-          github: "https://github.com/CarlosCr18/pomodoro",
-          text: "A clock to keep track of your sessions length",
-          skills: [
             {
               url: "img/javascript.svg",
               alt: "Javascript",
@@ -104,6 +81,29 @@ var datajson = {
           ],
         },
         {
+          id: "Pomodoro",
+          title: "Pomodoro App",
+          img: "img/pomodoro.webp",
+          imgAlt: "project pomodoro preview image",
+          liveUrl: "https://carloscr18.github.io/pomodoro/",
+          github: "https://github.com/CarlosCr18/pomodoro",
+          text: "A clock to keep track of your sessions length",
+          skills: [
+            {
+              url: "img/javascript.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/CSS3.svg",
+              alt: "CSS3",
+            },
+            {
+              url: "img/react.webp",
+              alt: "React",
+            },
+          ],
+        },
+        {
           id: "Calculator",
           title: "Calculator app",
           img: "img/calculator.webp",
@@ -129,7 +129,7 @@ var datajson = {
       ],
     },
     formData: {
-      title: "Let's work together!",
+      title: "Let's create something amazing!",
       text: "Do you love development as much as I do? \n Do you have a project in mind that you think we can make it happen? \n My inbox is always open wether you are a potential client, a recruiter or you just want to say hello!",
       formSent: "Thank you for leaving a message, I will get to you soon!",
       nameLabel: "Name",
@@ -156,8 +156,8 @@ var datajson = {
       text: "Este es mi portafolio.",
     },
     aboutData: {
-      title: "Acerca de mi",
-      text: "Hola mi nombre es Carlos Crespo \n Soy un ingeniero en mecatronica con un gran interes en la tecnologia que busca siempre expandir sus horizontes \n Soy un desarrollador autodidacta,tengo un certificado de Front End Development Libraries completado en freeCodeCamp y ahora estoy estudiando por mi cuenta a traves de articulos en la red, youtube e internet para llegar a ser un desarrollador full stack.",
+      title: "",
+      text: "Soy un ingeniero en mecatronica \n Soy desarrollador web \n Soy un desarrollador autodidacta, tengo un certificado de Front End Development Libraries completado en freeCodeCamp y ahora estoy llegando a ser un desarrollador full stack.",
     },
     projectsData: {
       title: "Proyectos",
@@ -176,29 +176,6 @@ var datajson = {
               url: "img/html.webp",
               alt: "HTML5",
             },
-            {
-              url: "img/javascript.svg",
-              alt: "Javascript",
-            },
-            {
-              url: "img/CSS3.svg",
-              alt: "CSS3",
-            },
-            {
-              url: "img/react.webp",
-              alt: "React",
-            },
-          ],
-        },
-        {
-          id: "Pomodoro",
-          title: "Pomodoro App",
-          img: "img/pomodoro.webp",
-          imgAlt: "imagen proyecto Pomodoro",
-          liveUrl: "https://carloscr18.github.io/pomodoro/",
-          github: "https://github.com/CarlosCr18/pomodoro",
-          text: "Temporizador para manejar tus sesiones",
-          skills: [
             {
               url: "img/javascript.svg",
               alt: "Javascript",
@@ -241,6 +218,29 @@ var datajson = {
           ],
         },
         {
+          id: "Pomodoro",
+          title: "Pomodoro App",
+          img: "img/pomodoro.webp",
+          imgAlt: "imagen proyecto Pomodoro",
+          liveUrl: "https://carloscr18.github.io/pomodoro/",
+          github: "https://github.com/CarlosCr18/pomodoro",
+          text: "Temporizador para manejar tus sesiones",
+          skills: [
+            {
+              url: "img/javascript.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/CSS3.svg",
+              alt: "CSS3",
+            },
+            {
+              url: "img/react.webp",
+              alt: "React",
+            },
+          ],
+        },
+        {
           id: "Calculator",
           title: "Calculadora app",
           img: "img/calculator.webp",
@@ -266,7 +266,7 @@ var datajson = {
       ],
     },
     formData: {
-      title: "Trabajemos juntos!",
+      title: "Creemos juntos algo asombroso!",
       text: "Te encanta desarrollar como a mi? \n Tienes algun proyecto en mente y crees que podemos colaborar juntos? \n Mi inbox siempre esta disponible no importa si eres un cliente potencial, un reclutador o simplemente quieres charlar!",
       formSent: "Gracias por mandar un mensaje, estaremos en contacto pronto!",
       nameLabel: "Nombre",

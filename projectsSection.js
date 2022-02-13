@@ -166,7 +166,7 @@ var ProjectsCard = function ProjectsCard(_ref2) {
           target: "_blank",
           rel: "noreferrer",
         },
-        "Live"
+        "Webpage"
       ),
       React.createElement(
         "a",
@@ -176,7 +176,8 @@ var ProjectsCard = function ProjectsCard(_ref2) {
           target: "_blank",
           rel: "noreferrer",
         },
-        React.createElement("i", { className: "fa fa-github" })
+        React.createElement("i", { className: "fa fa-github" }),
+        " Github"
       )
     ),
     React.createElement(

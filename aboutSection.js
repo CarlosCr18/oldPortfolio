@@ -23,23 +23,27 @@ var ContentAbout = function ContentAbout(_ref) {
       React.createElement(
         "div",
         { className: "About-text" },
-        currentAboutData.text.split("\n")[0],
-        React.createElement("br", null),
-        React.createElement("br", null),
-        currentAboutData.text.split("\n")[1],
-        React.createElement("br", null),
-        React.createElement("br", null),
-        currentAboutData.text.split("\n")[2]
+        React.createElement(
+          "div",
+          { className: "about-text-top" },
+          currentAboutData.text.split("\n")[0]
+        ),
+        React.createElement(
+          "div",
+          { className: "about-text-middle" },
+          currentAboutData.text.split("\n")[1]
+        ),
+        React.createElement(
+          "div",
+          { className: "about-text-bottom" },
+          currentAboutData.text.split("\n")[2]
+        )
       )
     ),
     React.createElement(
       "div",
       { className: "About-skills" },
-      React.createElement(
-        "h3",
-        null,
-        "Skills"
-      ),
+      React.createElement("h3", null, "Skills"),
       React.createElement(
         "div",
         { className: "About-skills-list" },
@@ -47,19 +51,19 @@ var ContentAbout = function ContentAbout(_ref) {
           loading: "lazy",
           src: "img/html.webp",
           alt: "html icon",
-          decoding: "async"
+          decoding: "async",
         }),
         React.createElement("img", {
           loading: "lazy",
           src: "img/javascript.svg",
           alt: "javascript icon",
-          decoding: "async"
+          decoding: "async",
         }),
         React.createElement("img", {
           loading: "lazy",
           src: "img/CSS3.svg",
           alt: "css icon",
-          decoding: "async"
+          decoding: "async",
         }),
         React.createElement(
           "div",
@@ -68,13 +72,9 @@ var ContentAbout = function ContentAbout(_ref) {
             loading: "lazy",
             src: "img/react.webp",
             alt: "React icon",
-            decoding: "async"
+            decoding: "async",
           }),
-          React.createElement(
-            "p",
-            null,
-            "React"
-          )
+          React.createElement("p", null, "React")
         ),
         React.createElement(
           "div",
@@ -83,13 +83,9 @@ var ContentAbout = function ContentAbout(_ref) {
             loading: "lazy",
             src: "img/github.svg",
             alt: "Github icon",
-            decoding: "async"
+            decoding: "async",
           }),
-          React.createElement(
-            "p",
-            null,
-            "Github"
-          )
+          React.createElement("p", null, "Github")
         )
       )
     )

@@ -12,13 +12,15 @@ const ContentAbout = ({ currentAboutData }) => {
       <div className="content-about-text">
         <h2 className="About-Title">{currentAboutData.title}</h2>
         <div className="About-text">
-          {currentAboutData.text.split("\n")[0]}
-          <br></br>
-          <br></br>
-          {currentAboutData.text.split("\n")[1]}
-          <br></br>
-          <br></br>
-          {currentAboutData.text.split("\n")[2]}
+          <p className="about-text-top">
+            {currentAboutData.text.split("\n")[0]}
+          </p>
+          <p className="aboutTextMiddle">
+            {currentAboutData.text.split("\n")[1]}
+          </p>
+          <p className="aboutTextBottom">
+            {currentAboutData.text.split("\n")[2]}
+          </p>
         </div>
       </div>
       <div className="About-skills">
