@@ -62,6 +62,12 @@ const ContentAbout = ({ currentAboutData }) => {
             />
             <p>Github</p>
           </div>
+          <img
+            loading="lazy"
+            src="img/next.svg"
+            alt="next icon"
+            decoding="async"
+          />
         </div>
       </div>
     </section>

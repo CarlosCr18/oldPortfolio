@@ -65,6 +65,12 @@ var ContentAbout = function ContentAbout(_ref) {
           alt: "css icon",
           decoding: "async",
         }),
+        React.createElement("img", {
+          loading: "lazy",
+          src: "img/next.svg",
+          alt: "next icon",
+          decoding: "async",
+        }),
         React.createElement(
           "div",
           null,

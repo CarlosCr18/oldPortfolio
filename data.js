@@ -27,33 +27,6 @@ const datajson = {
       text: "Here I show you a small list of projects that I've developed, some are more complex than the others or more aesthetic but I've learned so much developing each one of them, hope you enjoy them and any feedback is well welcomed.",
       projects: [
         {
-          id: "Maskottchen",
-          title: "Dog grooming center",
-          img: "img/maskottchen.webp",
-          imgAlt: "project maskottchen preview image",
-          liveUrl: "https://carloscr18.github.io/Maskottchen/",
-          github: "https://github.com/CarlosCr18/Maskottchen",
-          text: "Frontpage for a dog grooming center and store",
-          skills: [
-            {
-              url: "img/html.webp",
-              alt: "HTML5",
-            },
-            {
-              url: "img/javascript.svg",
-              alt: "Javascript",
-            },
-            {
-              url: "img/CSS3.svg",
-              alt: "CSS3",
-            },
-            {
-              url: "img/react.webp",
-              alt: "React",
-            },
-          ],
-        },
-        {
           id: "NiponABC",
           title: "NiponABC",
           img: "img/niponabc.webp",
@@ -77,6 +50,33 @@ const datajson = {
             {
               url: "img/next.svg",
               alt: "Next Js",
+            },
+          ],
+        },
+        {
+          id: "Maskottchen",
+          title: "Dog grooming center",
+          img: "img/maskottchen.webp",
+          imgAlt: "project maskottchen preview image",
+          liveUrl: "https://carloscr18.github.io/Maskottchen/",
+          github: "https://github.com/CarlosCr18/Maskottchen",
+          text: "Frontpage for a dog grooming center and store",
+          skills: [
+            {
+              url: "img/html.webp",
+              alt: "HTML5",
+            },
+            {
+              url: "img/javascript.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/CSS3.svg",
+              alt: "CSS3",
+            },
+            {
+              url: "img/react.webp",
+              alt: "React",
             },
           ],
         },
@@ -191,33 +191,6 @@ const datajson = {
       text: "Aqui les presento una pequena lista de los proyectos que he desarrollado, algunos son mas complejos que otros o mas esteticos pero he aprendido bastante desarrollando cada uno de ellos, espero que los disfruten y cualquier retroalimentacion es bien recibida.",
       projects: [
         {
-          id: "Maskottchen",
-          title: "Maskottchen",
-          img: "img/maskottchen.webp",
-          imgAlt: "imagen de proyecto maskottchen ",
-          liveUrl: "https://carloscr18.github.io/Maskottchen/",
-          github: "https://github.com/CarlosCr18/Maskottchen",
-          text: "Frontpage para estetica y tienda canina",
-          skills: [
-            {
-              url: "img/html.webp",
-              alt: "HTML5",
-            },
-            {
-              url: "img/javascript.svg",
-              alt: "Javascript",
-            },
-            {
-              url: "img/CSS3.svg",
-              alt: "CSS3",
-            },
-            {
-              url: "img/react.webp",
-              alt: "React",
-            },
-          ],
-        },
-        {
           id: "NiponABC",
           title: "NiponABC",
           img: "img/niponabc.webp",
@@ -241,6 +214,33 @@ const datajson = {
             {
               url: "img/next.svg",
               alt: "Next Js",
+            },
+          ],
+        },
+        {
+          id: "Maskottchen",
+          title: "Maskottchen",
+          img: "img/maskottchen.webp",
+          imgAlt: "imagen de proyecto maskottchen ",
+          liveUrl: "https://carloscr18.github.io/Maskottchen/",
+          github: "https://github.com/CarlosCr18/Maskottchen",
+          text: "Frontpage para estetica y tienda canina",
+          skills: [
+            {
+              url: "img/html.webp",
+              alt: "HTML5",
+            },
+            {
+              url: "img/javascript.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/CSS3.svg",
+              alt: "CSS3",
+            },
+            {
+              url: "img/react.webp",
+              alt: "React",
             },
           ],
         },
