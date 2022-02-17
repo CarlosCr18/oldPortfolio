@@ -1,9 +1,9 @@
 // data section of the webpage so we can change language within the same webpage using react
 // Seccion de informacion de la webpage para poder cambiar el lenguaje dentro de la misma pagina usando react
 
-var language = "es";
+let language = "es";
 
-var datajson = {
+const datajson = {
   en: {
     navBarData: {
       aria: "navigation link",
@@ -20,11 +20,11 @@ var datajson = {
     },
     aboutData: {
       title: "",
-      text: "I'm a mechatronics engineer\nI'm a wev developer\n I'm an autodidact developer, I have a Front End Development Libraries certificate recived from FreeCodeCamp and now I'm becoming a full stack developer.",
+      text: "I'm a mechatronics engineer\n  I'm a wev developer\n I'm an autodidact developer, I have a Front End Development Libraries certificate recived from FreeCodeCamp and now I'm becoming a full stack developer.",
     },
     projectsData: {
       title: "Projects",
-      text: "Here I show you a small list of projects that I've developed, I hope you enjoy them and any feedback is well welcomed.",
+      text: "Here I show you a small list of projects that I've developed, some are more complex than the others or more aesthetic but I've learned so much developing each one of them, hope you enjoy them and any feedback is well welcomed.",
       projects: [
         {
           id: "Maskottchen",
@@ -50,6 +50,33 @@ var datajson = {
             {
               url: "img/react.webp",
               alt: "React",
+            },
+          ],
+        },
+        {
+          id: "NiponABC",
+          title: "NiponABC",
+          img: "img/niponabc.webp",
+          imgAlt: "project niponabc preview image",
+          liveUrl: "https://niponabc.herokuapp.com/",
+          github: "https://niponabc.herokuapp.com/",
+          text: "Learn the japanese alphabet playing",
+          skills: [
+            {
+              url: "img/javascript.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/CSS3.svg",
+              alt: "CSS3",
+            },
+            {
+              url: "img/react.webp",
+              alt: "React",
+            },
+            {
+              url: "img/next.svg",
+              alt: "Next Js",
             },
           ],
         },
@@ -129,7 +156,7 @@ var datajson = {
       ],
     },
     formData: {
-      title: "Let's create something amazing!",
+      title: "Let's work together!",
       text: "Do you love development as much as I do? \n Do you have a project in mind that you think we can make it happen? \n My inbox is always open wether you are a potential client, a recruiter or you just want to say hello!",
       formSent: "Thank you for leaving a message, I will get to you soon!",
       nameLabel: "Name",
@@ -157,11 +184,11 @@ var datajson = {
     },
     aboutData: {
       title: "",
-      text: "Soy un ingeniero en mecatronica \n Soy desarrollador web \n Soy un desarrollador autodidacta, tengo un certificado de Front End Development Libraries completado en freeCodeCamp y ahora estoy llegando a ser un desarrollador full stack.",
+      text: "Soy un ingeniero en mecatronica  \n Soy desarrollador web \n Soy un desarrollador autodidacta, tengo un certificado de Front End Development Libraries completado en freeCodeCamp y ahora estoy llegando a ser un desarrollador full stack.",
     },
     projectsData: {
       title: "Proyectos",
-      text: "Aqui les presento una pequena lista de los proyectos que he desarrollado, espero que los disfruten y cualquier retroalimentacion es bien recibida.",
+      text: "Aqui les presento una pequena lista de los proyectos que he desarrollado, algunos son mas complejos que otros o mas esteticos pero he aprendido bastante desarrollando cada uno de ellos, espero que los disfruten y cualquier retroalimentacion es bien recibida.",
       projects: [
         {
           id: "Maskottchen",
@@ -187,6 +214,33 @@ var datajson = {
             {
               url: "img/react.webp",
               alt: "React",
+            },
+          ],
+        },
+        {
+          id: "NiponABC",
+          title: "NiponABC",
+          img: "img/niponabc.webp",
+          imgAlt: "imagen de proyecto niponabc",
+          liveUrl: "https://niponabc.herokuapp.com/",
+          github: "https://niponabc.herokuapp.com/",
+          text: "Aprende el alfabeto japones jugando",
+          skills: [
+            {
+              url: "img/javascript.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/CSS3.svg",
+              alt: "CSS3",
+            },
+            {
+              url: "img/react.webp",
+              alt: "React",
+            },
+            {
+              url: "img/next.svg",
+              alt: "Next Js",
             },
           ],
         },
@@ -266,7 +320,7 @@ var datajson = {
       ],
     },
     formData: {
-      title: "Creemos juntos algo asombroso!",
+      title: "Trabajemos juntos!",
       text: "Te encanta desarrollar como a mi? \n Tienes algun proyecto en mente y crees que podemos colaborar juntos? \n Mi inbox siempre esta disponible no importa si eres un cliente potencial, un reclutador o simplemente quieres charlar!",
       formSent: "Gracias por mandar un mensaje, estaremos en contacto pronto!",
       nameLabel: "Nombre",

@@ -54,29 +54,6 @@ const datajson = {
           ],
         },
         {
-          id: "Pomodoro",
-          title: "Pomodoro App",
-          img: "img/pomodoro.webp",
-          imgAlt: "project pomodoro preview image",
-          liveUrl: "https://carloscr18.github.io/pomodoro/",
-          github: "https://github.com/CarlosCr18/pomodoro",
-          text: "A clock to keep track of your sessions length",
-          skills: [
-            {
-              url: "img/javascript.svg",
-              alt: "Javascript",
-            },
-            {
-              url: "img/CSS3.svg",
-              alt: "CSS3",
-            },
-            {
-              url: "img/react.webp",
-              alt: "React",
-            },
-          ],
-        },
-        {
           id: "RandomQuotes",
           title: "Random quotes generator",
           img: "img/randomquotes.webp",
@@ -100,6 +77,29 @@ const datajson = {
             {
               url: "img/redux.svg",
               alt: "Redux",
+            },
+          ],
+        },
+        {
+          id: "Pomodoro",
+          title: "Pomodoro App",
+          img: "img/pomodoro.webp",
+          imgAlt: "project pomodoro preview image",
+          liveUrl: "https://carloscr18.github.io/pomodoro/",
+          github: "https://github.com/CarlosCr18/pomodoro",
+          text: "A clock to keep track of your sessions length",
+          skills: [
+            {
+              url: "img/javascript.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/CSS3.svg",
+              alt: "CSS3",
+            },
+            {
+              url: "img/react.webp",
+              alt: "React",
             },
           ],
         },
@@ -191,29 +191,6 @@ const datajson = {
           ],
         },
         {
-          id: "Pomodoro",
-          title: "Pomodoro App",
-          img: "img/pomodoro.webp",
-          imgAlt: "imagen proyecto Pomodoro",
-          liveUrl: "https://carloscr18.github.io/pomodoro/",
-          github: "https://github.com/CarlosCr18/pomodoro",
-          text: "Temporizador para manejar tus sesiones",
-          skills: [
-            {
-              url: "img/javascript.svg",
-              alt: "Javascript",
-            },
-            {
-              url: "img/CSS3.svg",
-              alt: "CSS3",
-            },
-            {
-              url: "img/react.webp",
-              alt: "React",
-            },
-          ],
-        },
-        {
           id: "RandomQuotes",
           title: "Generador de citas al azar",
           img: "img/randomquotes.webp",
@@ -237,6 +214,29 @@ const datajson = {
             {
               url: "img/redux.svg",
               alt: "Redux",
+            },
+          ],
+        },
+        {
+          id: "Pomodoro",
+          title: "Pomodoro App",
+          img: "img/pomodoro.webp",
+          imgAlt: "imagen proyecto Pomodoro",
+          liveUrl: "https://carloscr18.github.io/pomodoro/",
+          github: "https://github.com/CarlosCr18/pomodoro",
+          text: "Temporizador para manejar tus sesiones",
+          skills: [
+            {
+              url: "img/javascript.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/CSS3.svg",
+              alt: "CSS3",
+            },
+            {
+              url: "img/react.webp",
+              alt: "React",
             },
           ],
         },
