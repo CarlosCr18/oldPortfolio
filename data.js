@@ -20,7 +20,7 @@ const datajson = {
     },
     aboutData: {
       title: "",
-      text: "I'm a mechatronics engineer\n  I'm a wev developer\n I'm an autodidact developer, I have a Front End Development Libraries certificate recived from FreeCodeCamp and now I'm becoming a full stack developer.",
+      text: "I'm a mechatronics engineer\n  I'm a wev developer\n I'm an autodidact developer, I have a Front End Development Libraries certificate recived from FreeCodeCamp and now I'm becoming a full stack MERN developer.",
     },
     projectsData: {
       title: "Projects",
@@ -160,8 +160,8 @@ const datajson = {
       text: "Do you love development as much as I do? \n Do you have a project in mind that you think we can make it happen? \n My inbox is always open wether you are a potential client, a recruiter or you just want to say hello!",
       formSent: "Thank you for leaving a message, I will get to you soon!",
       nameLabel: "Name",
-      namePlaceholder: "Your name",
-      emailPlaceholder: "Your email address",
+      namePlaceholder: "",
+      emailPlaceholder: "",
       textAreaLabel: "What's in your mind?",
       textAreaPlaceholder: "Your message",
       submitButtonText: "Send",
@@ -184,7 +184,7 @@ const datajson = {
     },
     aboutData: {
       title: "",
-      text: "Soy un ingeniero en mecatronica  \n Soy desarrollador web \n Soy un desarrollador autodidacta, tengo un certificado de Front End Development Libraries completado en freeCodeCamp y ahora estoy llegando a ser un desarrollador full stack.",
+      text: "Soy un ingeniero en mecatronica  \n Soy desarrollador web \n Soy un desarrollador autodidacta, tengo un certificado de Front End Development Libraries completado en freeCodeCamp y ahora estoy llegando a ser un desarrollador full stack MERN.",
     },
     projectsData: {
       title: "Proyectos",
@@ -324,8 +324,8 @@ const datajson = {
       text: "Te encanta desarrollar como a mi? \n Tienes algun proyecto en mente y crees que podemos colaborar juntos? \n Mi inbox siempre esta disponible no importa si eres un cliente potencial, un reclutador o simplemente quieres charlar!",
       formSent: "Gracias por mandar un mensaje, estaremos en contacto pronto!",
       nameLabel: "Nombre",
-      namePlaceholder: "Tu nombre",
-      emailPlaceholder: "Tu direccion de email",
+      namePlaceholder: "",
+      emailPlaceholder: "",
       textAreaLabel: "Que tienes en mente?",
       textAreaPlaceholder: "Tu mensaje",
       submitButtonText: "Enviar",
