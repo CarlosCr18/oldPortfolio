@@ -77,12 +77,17 @@ var ContentAbout = function ContentAbout(_ref) {
           alt: "mongo icon",
           decoding: "async",
         }),
-        React.createElement("img", {
-          loading: "lazy",
-          src: "img/nodejs.svg",
-          alt: "nodejs icon",
-          decoding: "async",
-        }),
+        React.createElement(
+          "div",
+          null,
+          React.createElement("img", {
+            loading: "lazy",
+            src: "img/express.png",
+            alt: "expres icon",
+            decoding: "async",
+          }),
+          React.createElement("p", null, "Espress")
+        ),
         React.createElement(
           "div",
           null,
@@ -94,6 +99,12 @@ var ContentAbout = function ContentAbout(_ref) {
           }),
           React.createElement("p", null, "React")
         ),
+        React.createElement("img", {
+          loading: "lazy",
+          src: "img/nodejs.svg",
+          alt: "nodejs icon",
+          decoding: "async",
+        }),
         React.createElement(
           "div",
           null,
