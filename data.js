@@ -32,7 +32,7 @@ const datajson = {
           img: "img/niponabc.webp",
           imgAlt: "project niponabc preview image",
           liveUrl: "https://niponabc.herokuapp.com/",
-          github: "https://niponabc.herokuapp.com/",
+          github: "https://github.com/CarlosCr18/niponABC",
           text: "Learn the japanese alphabet playing",
           skills: [
             {
@@ -196,7 +196,7 @@ const datajson = {
           img: "img/niponabc.webp",
           imgAlt: "imagen de proyecto niponabc",
           liveUrl: "https://niponabc.herokuapp.com/",
-          github: "https://niponabc.herokuapp.com/",
+          github: "https://github.com/CarlosCr18/niponABC",
           text: "Aprende el alfabeto japones jugando",
           skills: [
             {
