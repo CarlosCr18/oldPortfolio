@@ -31,7 +31,7 @@ const datajson = {
           title: "NiponABC",
           img: "img/niponabc.webp",
           imgAlt: "project niponabc preview image",
-          liveUrl: "https://niponabc.herokuapp.com/",
+          liveUrl: "https://niponabcapp.herokuapp.com/",
           github: "https://github.com/CarlosCr18/niponABC",
           text: "Learn the japanese alphabet playing",
           skills: [
@@ -50,6 +50,29 @@ const datajson = {
             {
               url: "img/next.svg",
               alt: "Next Js",
+            },
+          ],
+        },
+        {
+          id: "japaneseApi",
+          title: "Japanese alphabet api",
+          img: "img/apiproject.webp",
+          imgAlt: "Japanese alphabet api preview image",
+          liveUrl: "https://japanese-alphabet-api.herokuapp.com/",
+          github: "https://github.com/CarlosCr18/japAlphabetAPI",
+          text: "An api that sends the japanese alphabet",
+          skills: [
+            {
+              url: "img/nodejs.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/express.png",
+              alt: "CSS3",
+            },
+            {
+              url: "img/mongo.svg",
+              alt: "React",
             },
           ],
         },
@@ -130,29 +153,6 @@ const datajson = {
             },
           ],
         },
-        {
-          id: "Calculator",
-          title: "Calculator app",
-          img: "img/calculator.webp",
-          imgAlt: "project calculator preview image",
-          liveUrl: "https://carloscr18.github.io/Calculator-app/",
-          github: "https://github.com/CarlosCr18/Calculator-app",
-          text: "A simple calculator",
-          skills: [
-            {
-              url: "img/javascript.svg",
-              alt: "Javascript",
-            },
-            {
-              url: "img/CSS3.svg",
-              alt: "CSS3",
-            },
-            {
-              url: "img/react.webp",
-              alt: "React",
-            },
-          ],
-        },
       ],
     },
     formData: {
@@ -195,7 +195,7 @@ const datajson = {
           title: "NiponABC",
           img: "img/niponabc.webp",
           imgAlt: "imagen de proyecto niponabc",
-          liveUrl: "https://niponabc.herokuapp.com/",
+          liveUrl: "https://niponabcapp.herokuapp.com/",
           github: "https://github.com/CarlosCr18/niponABC",
           text: "Aprende el alfabeto japones jugando",
           skills: [
@@ -214,6 +214,29 @@ const datajson = {
             {
               url: "img/next.svg",
               alt: "Next Js",
+            },
+          ],
+        },
+        {
+          id: "japaneseApi",
+          title: "Alfabeto japones api",
+          img: "img/apiproject.webp",
+          imgAlt: "Imagen de proyecto api alfabeto japones",
+          liveUrl: "https://japanese-alphabet-api.herokuapp.com/",
+          github: "https://github.com/CarlosCr18/japAlphabetAPI",
+          text: "Una api que responde con el alfabeto japones",
+          skills: [
+            {
+              url: "img/nodejs.svg",
+              alt: "Javascript",
+            },
+            {
+              url: "img/express.png",
+              alt: "CSS3",
+            },
+            {
+              url: "img/mongo.svg",
+              alt: "React",
             },
           ],
         },
@@ -279,29 +302,6 @@ const datajson = {
           liveUrl: "https://carloscr18.github.io/pomodoro/",
           github: "https://github.com/CarlosCr18/pomodoro",
           text: "Temporizador para manejar tus sesiones",
-          skills: [
-            {
-              url: "img/javascript.svg",
-              alt: "Javascript",
-            },
-            {
-              url: "img/CSS3.svg",
-              alt: "CSS3",
-            },
-            {
-              url: "img/react.webp",
-              alt: "React",
-            },
-          ],
-        },
-        {
-          id: "Calculator",
-          title: "Calculadora app",
-          img: "img/calculator.webp",
-          imgAlt: "imagen de proyecto calculadora",
-          liveUrl: "https://carloscr18.github.io/Calculator-app/",
-          github: "https://github.com/CarlosCr18/Calculator-app",
-          text: "Una calculadora simple",
           skills: [
             {
               url: "img/javascript.svg",
