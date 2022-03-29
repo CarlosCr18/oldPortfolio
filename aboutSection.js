@@ -49,30 +49,6 @@ var ContentAbout = function ContentAbout(_ref) {
         { className: "About-skills-list" },
         React.createElement("img", {
           loading: "lazy",
-          src: "img/html.webp",
-          alt: "html icon",
-          decoding: "async",
-        }),
-        React.createElement("img", {
-          loading: "lazy",
-          src: "img/javascript.svg",
-          alt: "javascript icon",
-          decoding: "async",
-        }),
-        React.createElement("img", {
-          loading: "lazy",
-          src: "img/CSS3.svg",
-          alt: "css icon",
-          decoding: "async",
-        }),
-        React.createElement("img", {
-          loading: "lazy",
-          src: "img/next.svg",
-          alt: "next icon",
-          decoding: "async",
-        }),
-        React.createElement("img", {
-          loading: "lazy",
           src: "img/mongo.svg",
           alt: "mongo icon",
           decoding: "async",
@@ -103,6 +79,12 @@ var ContentAbout = function ContentAbout(_ref) {
           loading: "lazy",
           src: "img/nodejs.svg",
           alt: "nodejs icon",
+          decoding: "async",
+        }),
+        React.createElement("img", {
+          loading: "lazy",
+          src: "img/next.svg",
+          alt: "next icon",
           decoding: "async",
         }),
         React.createElement(

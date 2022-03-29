@@ -35,10 +35,10 @@ var ContentProjects = function ContentProjects(_ref) {
         });
     } else {
       document
-        .querySelectorAll(".project-card")[0]
+        .querySelectorAll(".project-card")[2]
         .classList.remove("project-card-inactive");
       document
-        .querySelectorAll(".project-card")[0]
+        .querySelectorAll(".project-card")[2]
         .classList.add("project-card-active");
     }
   }, []);
@@ -141,8 +141,6 @@ var ProjectsCard = function ProjectsCard(_ref2) {
       { className: "project-card-title" },
       currentProject.title
     ),
-    React.createElement("hr", null),
-    React.createElement("br", null),
     React.createElement("img", {
       className: "project-card-img",
       alt: currentProject.imgAlt,
@@ -157,34 +155,47 @@ var ProjectsCard = function ProjectsCard(_ref2) {
     ),
     React.createElement(
       "div",
-      { className: "project-card-container" },
+      { className: "project-card-container project-links-container" },
       React.createElement(
-        "a",
-        {
-          href: currentProject.liveUrl,
-          "aria-label": "link to live page",
-          target: "_blank",
-          rel: "noreferrer",
-        },
-        "Webpage"
+        "div",
+        { className: "btn btn-3 hover-border-2" },
+        React.createElement(
+          "a",
+          {
+            className: "project-card-link primary-project-card-link",
+            href: currentProject.liveUrl,
+            "aria-label": "link to live page",
+            target: "_blank",
+            rel: "noreferrer",
+          },
+          "Webpage ",
+          React.createElement("i", {
+            className: "fa fa-external-link fa-project-card",
+          })
+        )
       ),
       React.createElement(
-        "a",
-        {
-          href: currentProject.github,
-          "aria-label": "link to github page",
-          target: "_blank",
-          rel: "noreferrer",
-        },
-        React.createElement("i", { className: "fa fa-github" }),
-        " Github"
+        "div",
+        { className: "btn btn-3" },
+        React.createElement(
+          "a",
+          {
+            className: "project-card-link",
+            href: currentProject.github,
+            "aria-label": "link to github page",
+            target: "_blank",
+            rel: "noreferrer",
+          },
+          "Github ",
+          React.createElement("i", {
+            className: "fa fa-github fa-project-card",
+          })
+        )
       )
     ),
     React.createElement(
       "div",
       { className: "project-card-text" },
-      React.createElement("hr", null),
-      React.createElement("br", null),
       currentProject.text,
       React.createElement("br", null)
     )

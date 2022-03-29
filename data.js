@@ -20,21 +20,25 @@ const datajson = {
     },
     aboutData: {
       title: "",
-      text: "I'm a mechatronics engineer\n  I'm a wev developer\n I'm an autodidact developer, I have a Front End Development Libraries certificate recived from FreeCodeCamp and now I'm becoming a full stack MERN developer.",
+      text: "I'm a mechatronics engineer\n  I'm a wev developer\n I'm a self-taught developer with passion for websites and applications development, I love learning new technologies. I focus on web development with a MERN stack",
     },
     projectsData: {
       title: "Projects",
       text: "Here I show you a small list of projects that I've developed, some are more complex than the others or more aesthetic but I've learned so much developing each one of them, hope you enjoy them and any feedback is well welcomed.",
       projects: [
         {
-          id: "NiponABC",
-          title: "NiponABC",
-          img: "img/niponabc.webp",
-          imgAlt: "project niponabc preview image",
-          liveUrl: "https://niponabcapp.herokuapp.com/",
-          github: "https://github.com/CarlosCr18/niponABC",
-          text: "Learn the japanese alphabet playing",
+          id: "Maskottchen",
+          title: "Dog grooming center",
+          img: "img/maskottchen.webp",
+          imgAlt: "project maskottchen preview image",
+          liveUrl: "https://carloscr18.github.io/Maskottchen/",
+          github: "https://github.com/CarlosCr18/Maskottchen",
+          text: "Frontpage for a dog grooming center and store",
           skills: [
+            {
+              url: "img/html.webp",
+              alt: "HTML5",
+            },
             {
               url: "img/javascript.svg",
               alt: "Javascript",
@@ -46,10 +50,6 @@ const datajson = {
             {
               url: "img/react.webp",
               alt: "React",
-            },
-            {
-              url: "img/next.svg",
-              alt: "Next Js",
             },
           ],
         },
@@ -77,18 +77,14 @@ const datajson = {
           ],
         },
         {
-          id: "Maskottchen",
-          title: "Dog grooming center",
-          img: "img/maskottchen.webp",
-          imgAlt: "project maskottchen preview image",
-          liveUrl: "https://carloscr18.github.io/Maskottchen/",
-          github: "https://github.com/CarlosCr18/Maskottchen",
-          text: "Frontpage for a dog grooming center and store",
+          id: "NiponABC",
+          title: "NiponABC",
+          img: "img/niponabc.webp",
+          imgAlt: "project niponabc preview image",
+          liveUrl: "https://niponabcapp.herokuapp.com/",
+          github: "https://github.com/CarlosCr18/niponABC",
+          text: "Learn the japanese alphabet playing",
           skills: [
-            {
-              url: "img/html.webp",
-              alt: "HTML5",
-            },
             {
               url: "img/javascript.svg",
               alt: "Javascript",
@@ -100,6 +96,10 @@ const datajson = {
             {
               url: "img/react.webp",
               alt: "React",
+            },
+            {
+              url: "img/next.svg",
+              alt: "Next Js",
             },
           ],
         },
@@ -184,21 +184,25 @@ const datajson = {
     },
     aboutData: {
       title: "",
-      text: "Soy un ingeniero en mecatronica  \n Soy desarrollador web \n Soy un desarrollador autodidacta, tengo un certificado de Front End Development Libraries completado en freeCodeCamp y ahora estoy llegando a ser un desarrollador full stack MERN.",
+      text: "Soy un ingeniero en mecatronica  \n Soy desarrollador web \n Soy un desarrollador autodidacta con una pasion por el desarollo de sitios web y aplicaciones, me encanta aprender nuevas tecnologias.",
     },
     projectsData: {
       title: "Proyectos",
       text: "Aqui les presento una pequena lista de los proyectos que he desarrollado, algunos son mas complejos que otros o mas esteticos pero he aprendido bastante desarrollando cada uno de ellos, espero que los disfruten y cualquier retroalimentacion es bien recibida.",
       projects: [
         {
-          id: "NiponABC",
-          title: "NiponABC",
-          img: "img/niponabc.webp",
-          imgAlt: "imagen de proyecto niponabc",
-          liveUrl: "https://niponabcapp.herokuapp.com/",
-          github: "https://github.com/CarlosCr18/niponABC",
-          text: "Aprende el alfabeto japones jugando",
+          id: "Maskottchen",
+          title: "Maskottchen",
+          img: "img/maskottchen.webp",
+          imgAlt: "imagen de proyecto maskottchen ",
+          liveUrl: "https://carloscr18.github.io/Maskottchen/",
+          github: "https://github.com/CarlosCr18/Maskottchen",
+          text: "Frontpage para estetica y tienda canina",
           skills: [
+            {
+              url: "img/html.webp",
+              alt: "HTML5",
+            },
             {
               url: "img/javascript.svg",
               alt: "Javascript",
@@ -210,10 +214,6 @@ const datajson = {
             {
               url: "img/react.webp",
               alt: "React",
-            },
-            {
-              url: "img/next.svg",
-              alt: "Next Js",
             },
           ],
         },
@@ -241,18 +241,14 @@ const datajson = {
           ],
         },
         {
-          id: "Maskottchen",
-          title: "Maskottchen",
-          img: "img/maskottchen.webp",
-          imgAlt: "imagen de proyecto maskottchen ",
-          liveUrl: "https://carloscr18.github.io/Maskottchen/",
-          github: "https://github.com/CarlosCr18/Maskottchen",
-          text: "Frontpage para estetica y tienda canina",
+          id: "NiponABC",
+          title: "NiponABC",
+          img: "img/niponabc.webp",
+          imgAlt: "imagen de proyecto niponabc",
+          liveUrl: "https://niponabcapp.herokuapp.com/",
+          github: "https://github.com/CarlosCr18/niponABC",
+          text: "Aprende el alfabeto japones jugando",
           skills: [
-            {
-              url: "img/html.webp",
-              alt: "HTML5",
-            },
             {
               url: "img/javascript.svg",
               alt: "Javascript",
@@ -264,6 +260,10 @@ const datajson = {
             {
               url: "img/react.webp",
               alt: "React",
+            },
+            {
+              url: "img/next.svg",
+              alt: "Next Js",
             },
           ],
         },
