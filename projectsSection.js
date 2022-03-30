@@ -63,12 +63,6 @@ var ContentProjects = function ContentProjects(_ref) {
           element.classList.remove("project-card-active");
         }
       }
-
-      if (element.classList.contains("project-card-active")) {
-        element.children[3].onclick = function () {
-          element.children[5].children[0].click();
-        };
-      }
     });
   };
 
@@ -147,6 +141,9 @@ var ProjectsCard = function ProjectsCard(_ref2) {
       src: currentProject.img,
       loading: "lazy",
       decoding: "async",
+      onClick: () => {
+        window.open(`${currentProject.liveUrl}`, "_blank");
+      },
     }),
     React.createElement(
       "div",
