@@ -6,9 +6,8 @@ const ContentIndex = () => {
   //We use useState hook to keep track of the language and rerender the content
   //El hook useState es usado para recargar el contenido de la pagina segun la variable del lenguaje
   const [language, setLanguage] = React.useState("es");
-
-  let data = language == "es" ? datajson.es : datajson.en;
-
+  const data = React.useRef();
+  data.current = language == "es" ? datajson.es : datajson.en;
   //Event listeners to change the slider in navBar page
   //the moveSlider function is called again after a timeout so it gets to the correct position when resizing the window
   //We use useEffect so its only called when the window is resized
